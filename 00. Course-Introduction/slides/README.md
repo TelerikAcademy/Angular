@@ -152,13 +152,6 @@
 <td>17</td>
 <td></td>
 </tr>
-<tr>
-<td>Teamwork Defence</td>
-<td>all day</td>
-<td>Fri</td>
-<td>18</td>
-<td>all</td>
-</tr>
 </tbody></table>
 
 ### Week 3

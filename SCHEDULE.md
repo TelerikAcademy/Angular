@@ -19,7 +19,6 @@
 | SPA приложения с KendoUI        | 2       | Mon | 14  |        |
 | Workshop: KendoUI               | 4       | Tue | 15  |        |
 | Exam preparation                | 4       | Thu | 17  |        |
-| Teamwork Defence                | all day | Fri | 18  | all    |
 
 ## Week 3
 
