@@ -2,15 +2,15 @@
 
 ## Week 1
 
-| Лекция                          | Време   | Ден | Дата| Лектор |
-|---------------------------------|---------|-----|-----|--------|
-| Въведение в курса               | 0.5     | Tue | 8   | Niki   |
-| Въведение в AngularJS           | 1       | Tue | 8   | Niki   |
-| Контролери и маркъп в AngularJS | 2       | Wed | 9   | Ivo?   |
-| Услуги в AngularJS              | 1       | Thu | 10  | Ivo?   |
-| Routing в AngularJS             | 1       | Thu | 10  | Ivo?   |
-| Директиви в AngularJS           | 0.5     | Thu | 10  | Ivo?   |
-| Workshop: AngularJS             | 4       | Fri | 11  | Ivo?   |
+| Лекция                          | Време   | Ден | Дата| Час   | Лектор |
+|---------------------------------|---------|-----|-----|----   | ------ |
+| Въведение в курса               | 0.5     | Wed | 9   | 17:30 | Niki   |
+| Въведение в AngularJS           | 1       | Wed | 9   | 18:00 | Ivo    |
+| Контролери и маркъп в AngularJS | 2       | Wed | 9   | 19:30 | Ivo    |
+| Услуги в AngularJS              | 1       | Thu | 10  | 18:00 | Ivo    |
+| Routing в AngularJS             | 1       | Thu | 10  | 19:30 | Ivo    |
+| Директиви в AngularJS           | 0.5     | Thu | 10  | 21:00 | Ivo    |
+| Workshop: AngularJS             | 4       | Fri | 11  | 18:00 | Ivo    |
 
 ## Week 2
 
