@@ -34,11 +34,12 @@
 - Lectures 5 times a week
 - The course exam?
   - Practical exam (Peer evaluation)
+  - Tuesday, December 22, 2015
 
 
 [Curriculum](http://academy.telerik.com/images/default-source/Academy_Curriculum/ta_plan_bg.png?sfvrsn=0)
 
-[link to table in Forum](http://telerikacademy.com/Forum/Questions/179433/%D0%9E%D1%80%D0%B8%D0%B5%D0%BD%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D1%8A%D1%87%D0%BD%D0%B0-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%B0-%D0%B4%D0%BE-%D0%BA%D1%80%D0%B0%D1%8F-%D0%BD%D0%B0-%D0%B0%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%8F%D1%82%D0%B0#forum-post-179433)
+[link to table in the forum](http://telerikacademy.com/Forum/Questions/179433/%D0%9E%D1%80%D0%B8%D0%B5%D0%BD%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D1%8A%D1%87%D0%BD%D0%B0-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%B0-%D0%B4%D0%BE-%D0%BA%D1%80%D0%B0%D1%8F-%D0%BD%D0%B0-%D0%B0%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%8F%D1%82%D0%B0#forum-post-179433)
 
 
 <!-- section start -->
@@ -65,7 +66,7 @@
 <td>Wed</td>
 <td>9</td>
 <td>17:30</td>
-<td>Niki</td>
+<td>Ivo</td>
 </tr>
 <tr>
 <td>Въведение в AngularJS</td>
@@ -160,9 +161,6 @@
 </tr>
 </tbody></table>
 
-
-<!-- attr: { hasScriptWrapper:true, showInPresentation:true, style:'font-size:0.5em' } -->
-<!-- # The Single Page Applications Course Program -->
 ### Week 3
 <table><thead>
 <tr>
@@ -242,9 +240,8 @@
 <!-- attr: { style:'font-size:0.9em' } -->
 # Course Evaluation
 - Course Evaluation
-  - **Practical exam** – 50%
+  - **Practical exam** – 65%
     - **Exam evaluation** – 10%
-  - **Teamwork** – 15%
   - **Homework** – 5%
     - **Homework evaluation** – 5%
   - **Attendance in class** – 5%
