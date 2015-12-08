@@ -7,9 +7,9 @@
 | Въведение в курса               | 0.5     | Wed | 9   | 17:30 | Niki   |
 | Въведение в AngularJS           | 1       | Wed | 9   | 18:00 | Ivo    |
 | Контролери и маркъп в AngularJS | 2       | Wed | 9   | 19:30 | Ivo    |
-| Услуги в AngularJS              | 1       | Thu | 10  | 18:00 | Ivo    |
-| Routing в AngularJS             | 1       | Thu | 10  | 19:30 | Ivo    |
-| Директиви в AngularJS           | 0.5     | Thu | 10  | 21:00 | Ivo    |
+| Услуги в AngularJS              | 1       | Thu | 10  | 10:00 | Ivo    |
+| Routing в AngularJS             | 1       | Thu | 10  | 11:30 | Ivo    |
+| Директиви в AngularJS           | 0.5     | Thu | 10  | 13:00 | Ivo    |
 | Workshop: AngularJS             | 4       | Fri | 11  | 18:00 | Ivo    |
 
 ## Week 2
