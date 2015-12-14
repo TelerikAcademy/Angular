@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Common</title>
+    <!-- Styles - first common then theme-->
+    <link href="../styles/kendo.common.min.css" rel="stylesheet" />
+    <link href="../styles/kendo.silver.min.css" rel="stylesheet" />
+
+    <!-- Scripts first jquery then kendo script-->
+    <script src="../scripts/jquery.min.js"></script>
+    <script src="../scripts/kendo.web.min.js"></script>
+
+    <style>
+        .container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="masked-text-box" />
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('#masked-text-box').kendoMaskedTextBox({
+                mask: '(000)---000---0000---L',
+                promptChar: '*'
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Common</title>
+    <!-- Styles - first common then theme-->
+    <link href="../styles/kendo.common.min.css" rel="stylesheet" />
+    <link href="../styles/kendo.silver.min.css" rel="stylesheet" />
+
+    <!-- Scripts first jquery then kendo script-->
+    <script src="../scripts/jquery.min.js"></script>
+    <script src="../scripts/kendo.web.min.js"></script>
+
+    <style>
+        .container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="agglomerations">
+            <p title="Canton - 26,300,000" id="canton">1</p>
+            <p title="Jakarta - 25,800,000" id="jakarta">2</p>
+            <p title="Mexico City - 23,500,000" id="mexico">3</p>
+            <p title="Delhi - 23,500,000" id="delhi">4</p>
+            <p title="Karachi - 22,100,000" id="karachi">5</p>
+            <p title="New York - 21,500,000" id="newyork">6</p>
+            <p title="Sao Paulo - 21,300,000" id="saopaolo">7</p>
+            <p title="Mumbay/Bombay - 21,100,000" id="bombay">8</p>
+            <p title="Los Angeles - 17,100,000" id="losangeles">9</p>
+            <p title="Osaka - 16,800,000" id="osaka">10</p>
+            <p title="Moscow - 16,200,000" id="moscow">11</p>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('#agglomerations').kendoTooltip({
+                filter: 'p[title]',
+                width: 120,
+                position: 'bottom',
+                autoHide: false,
+                showOn: 'click'
+            })
+        });
+    </script>
+</body>
+</html>

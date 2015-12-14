@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Kendo Grid Widget Local Data</title>
+    <link href="../styles/kendo.common.min.css" rel="stylesheet" />
+    <link href="../styles/kendo.silver.min.css" rel="stylesheet" />
+
+    <script src="../scripts/jquery.min.js"></script>
+    <script src="../scripts/kendo.web.min.js"></script>
+</head>
+<body>
+    <div id="grid" style="width: 800px">
+    </div>
+
+    <script>
+        var carsDataSource = new kendo.data.DataSource({
+            data: [
+                { make: 'Opel', model: 'Insignia', year: 2009, power: 200, owner: "Kendov" },
+                { make: 'Opel', model: 'Astra', year: 2011, power: 211, owner: "Kendov" },
+                { make: 'Audi', model: 'A5', year: 2008, power: 255, owner: "Kendov" },
+                { make: 'Audi', model: 'A8', year: 2009, power: 235, owner: "Kendov" },
+                { make: 'Audi', model: 'A3', year: 2005, power: 211, owner: "Kendov" },
+                { make: 'BMW', model: 'M3', year: 2010, power: 411, owner: "Kendov" },
+                { make: 'Mercedes', model: 'CL', year: 2011, power: 320, owner: "Kendov" },
+                { make: 'Mercedes', model: 'S', year: 2005, power: 220, owner: "Kendov" },
+                { make: 'Mercedes', model: 'C', year: 2012, power: 100, owner: "Kendov" },
+                { make: 'Lada', model: 'Not Niva', year: 1985, power: 35, owner: "Doncho" }
+            ],
+            pageSize: 5
+        });
+
+        $(document).ready(function () {
+            $('#grid').kendoGrid({
+                dataSource: carsDataSource,
+                editable: true,
+                toolbar: ['create'],
+                pageable: {
+                    input: true,
+                    numeric: false
+                },
+                scrollable: false,
+                sortable: true,
+                filterable: false,
+                groupable: true,
+                columns: [
+                    { field: "make", title: "Make", width: 130 },
+                    { field: "model", title: "Model", width: 100 },
+                    { field: "year", title: "Year", width: 80 },
+                    { field: "power", title: "Power", width: 80 },
+                    { field: "owner", title: "Owner", width: 80 },
+                    { command: ["destroy"], title: "&nbsp;", width: "90px" }
+                ]
+            });
+        });
+    </script>
+</body>
+</html>

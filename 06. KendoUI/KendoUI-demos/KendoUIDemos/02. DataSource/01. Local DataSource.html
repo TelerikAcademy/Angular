@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Basic DataSource</title>
+    <!-- Styles - first common then theme-->
+    <link href="../styles/kendo.common.min.css" rel="stylesheet" />
+    <link href="../styles/kendo.silver.min.css" rel="stylesheet" />
+
+    <!-- Scripts first jquery then kendo script-->
+    <script src="../scripts/jquery.min.js"></script>
+    <script src="../scripts/kendo.web.min.js"></script>
+</head>
+<body>
+
+    <div id="grid"></div>
+    <div id="maxYear"></div>
+    <div id="sumOfPower"></div>
+
+    <script>
+        $(document).ready(function () {
+
+            var cars = [
+                { make: 'Opel', model: 'Insignia', year: '2009', power: 200, },
+                { make: 'Audi', model: 'A5', year: '2008', power: 255 },
+                { make: 'BMW', model: 'M3', year: '2010', power: 411 },
+                { make: 'Mercedes', model: 'CL', year: '2011', power: 320 }
+            ];
+
+            var carsDataSource = new kendo.data.DataSource({
+                data: cars,
+                aggregate: [
+                    { field: 'power', aggregate: 'sum' },
+                    { field: 'year', aggregate: 'max' },
+                ]
+            });
+
+            $('#grid').kendoGrid({
+                dataSource: carsDataSource,
+                columns: [
+                    { field: 'make', width: 50, title: 'Make' },
+                    { field: 'model', width: 50, title: 'Model' },
+                    { field: 'year', width: 50, title: 'Year' },
+                    { field: 'power', width: 50, title: 'Power' },
+                ]
+            });
+
+            carsDataSource.fetch(function () {
+                var newestCar = carsDataSource.aggregates().year.max;
+                var sumOfPower = carsDataSource.aggregates().power.sum;
+                $('#maxYear').text('Newest car: ' + newestCar);
+                $('#sumOfPower').text('Sum of power: ' + sumOfPower);
+            });
+        });
+    </script>
+</body>
+</html>

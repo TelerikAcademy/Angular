@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Common</title>
+    <!-- Styles - first common then theme-->
+    <link href="../styles/kendo.common.min.css" rel="stylesheet" />
+    <link href="../styles/kendo.silver.min.css" rel="stylesheet" />
+
+    <!-- Scripts first jquery then kendo script-->
+    <script src="../scripts/jquery.min.js"></script>
+    <script src="../scripts/kendo.web.min.js"></script>
+
+    <style>
+        .container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input id="color-picker" />
+        <button id="open">Open</button>
+        <button id="close">Close</button>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('#color-picker').kendoColorPicker({
+                palette: ['#fff', '#000', '#123456'],
+                change: function () {
+                    console.log(this.value());
+                }
+            });
+
+            $('#open').on('click', function () {
+                $('#color-picker').data('kendoColorPicker').open();
+            });
+
+            $('#close').on('click', function () {
+                $('#color-picker').data('kendoColorPicker').close();
+            });
+        });
+    </script>
+</body>
+</html>

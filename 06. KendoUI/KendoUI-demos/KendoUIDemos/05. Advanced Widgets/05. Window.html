@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Kendo TreeView Widget</title>
+    <link href="../styles/kendo.common.min.css" rel="stylesheet" />
+    <link href="../styles/kendo.silver.min.css" rel="stylesheet" />
+
+    <script src="../scripts/jquery.min.js"></script>
+    <script src="../scripts/kendo.web.min.js"></script>
+</head>
+<body>
+    <button id="open-window">Open</button>
+    <div id="window">
+        Window Content
+    </div>
+    <script>
+        $(document).ready(function () {
+            $("#window").kendoWindow({
+                actions: ["Pin", "Refresh", "Maximize", "Minimize", "Close"],
+                draggable: true,
+                height: "300px",
+                modal: false,
+                pinned: false,
+                position: {
+                    top: 100,
+                    left: 100
+                },
+                resizable: false,
+                visible: false,
+                title: "Modal Window",
+                width: "500px"
+            });
+
+            $('#open-window').on('click', function () {
+                $('#window').data('kendoWindow').center().open();
+            });
+        });
+    </script>
+</body>
+</html>

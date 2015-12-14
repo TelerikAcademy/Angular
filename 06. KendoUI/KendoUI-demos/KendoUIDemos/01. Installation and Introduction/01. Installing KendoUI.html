@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Installing Kendo UI</title>
+    <!-- Styles - first common then theme-->
+    <link href="../styles/kendo.common.min.css" rel="stylesheet" />
+    <link href="../styles/kendo.silver.min.css" rel="stylesheet" />
+
+    <!-- Scripts first jquery then kendo script-->
+    <script src="../scripts/jquery.min.js"></script>
+    <script src="../scripts/kendo.web.min.js"></script>
+
+    <style>
+        .container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>Yey, I installed Kendo! ^_^</div>
+        <input id="datepicker" />
+        <div id="calendar"></div>
+        <table id="marks">
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Math
+                </th>
+                <th>
+                    Biology
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    Pesho
+                </td>
+                <td>
+                    1
+                </td>
+                <td>
+                    2
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Gosho
+                </td>
+                <td>
+                    3
+                </td>
+                <td>
+                    4
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Ivan
+                </td>
+                <td>
+                    5
+                </td>
+                <td>
+                    6
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('#datepicker').kendoDatePicker();
+            $('#calendar').kendoCalendar();
+            $('#marks').kendoGrid({
+                sortable: true,
+                filterable: true
+            });
+        });
+    </script>
+</body>
+</html>

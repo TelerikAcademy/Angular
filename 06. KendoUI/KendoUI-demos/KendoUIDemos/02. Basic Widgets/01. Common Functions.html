@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Common</title>
+    <!-- Styles - first common then theme-->
+    <link href="../styles/kendo.common.min.css" rel="stylesheet" />
+    <link href="../styles/kendo.silver.min.css" rel="stylesheet" />
+
+    <!-- Scripts first jquery then kendo script-->
+    <script src="../scripts/jquery.min.js"></script>
+    <script src="../scripts/kendo.web.min.js"></script>
+
+    <style>
+        .container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input id="date-picker" />
+        <div id="value">None selected</div>
+        <button id="destroy">Destroy</button>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('#date-picker').kendoDatePicker();
+
+            var datePicker = $('#date-picker').data('kendoDatePicker');
+            datePicker.bind('change', function () {
+                $('#value').text(datePicker.value());
+            })
+
+            console.log(datePicker.element);
+
+            $('#destroy').on('click', function () {
+                datePicker.wrapper.remove();
+                datePicker.destroy();
+            });
+        });
+    </script>
+</body>
+</html>

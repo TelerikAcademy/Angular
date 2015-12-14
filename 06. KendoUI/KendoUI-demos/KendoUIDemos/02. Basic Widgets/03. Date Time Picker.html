@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Common</title>
+    <!-- Styles - first common then theme-->
+    <link href="../styles/kendo.common.min.css" rel="stylesheet" />
+    <link href="../styles/kendo.silver.min.css" rel="stylesheet" />
+
+    <!-- Scripts first jquery then kendo script-->
+    <script src="../scripts/jquery.min.js"></script>
+    <script src="../scripts/kendo.web.min.js"></script>
+
+    <style>
+        .container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input id="date-time-picker" />
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('#date-time-picker').kendoDateTimePicker({
+                value: new Date(2000, 10, 10, 10, 0, 0),
+                min: new Date(1995, 0, 1, 8, 0, 0),
+                max: new Date(2015, 11, 31, 18, 0, 0),
+                start: 'decade',
+                format: 'yyyy/MM/dd hh:mm:ss Ivaylo',
+                interval: 90
+            });
+        });
+    </script>
+</body>
+</html>

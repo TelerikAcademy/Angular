@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Basic Template</title>
+    <link href="../styles/kendo.common.min.css" rel="stylesheet" />
+    <link href="../styles/kendo.silver.min.css" rel="stylesheet" />
+
+    <!-- Scripts first jquery then kendo script-->
+    <script src="../scripts/jquery.min.js"></script>
+    <script src="../scripts/kendo.web.min.js"></script>
+</head>
+<body>
+
+    <div id="cars"></div>
+
+    <script type="text/x-kendo-template" id="car-template">
+        # for (var i = 0; i < data.length; i++) { #
+            <div>
+            <strong>Make: </strong>
+            <span>#= data[i].make #, </span>
+            <span>Model: </span>
+            <a href="/cars/#= i #">#= data[i].model #</a>
+            <span>, </span>
+            <span>Age: #= (new Date().getFullYear() - data[i].year) #, </span>
+            <span>Power: #= data[i].power #</span>
+            </div> #
+        } #
+    </script>
+
+    <script>
+
+        $(document).ready(function () {
+
+            var carsDataSource = new kendo.data.DataSource({
+                data: [
+                { make: 'Opel', model: 'Insignia', year: 2009, power: 200, },
+                { make: 'Opel', model: 'Astra', year: 2011, power: 211, },
+                { make: 'Audi', model: 'A5', year: 2008, power: 255 },
+                { make: 'Audi', model: 'A8', year: 2009, power: 235 },
+                { make: 'Audi', model: 'A3', year: 2005, power: 211 },
+                { make: 'BMW', model: 'M3', year: 2010, power: 411 },
+                { make: 'Mercedes', model: 'CL', year: 2011, power: 320 },
+                { make: 'Mercedes', model: 'S', year: 2005, power: 220 },
+                { make: 'Mercedes', model: 'C', year: 2012, power: 100 }
+                ]
+            });
+
+            var carTemplate = kendo.template($('#car-template').html());
+
+            RenderCars(carTemplate);
+
+            function RenderCars(template) {
+
+                carsDataSource.fetch(function () {
+                    $('#cars').html(carTemplate(carsDataSource.data()));
+                });
+            };
+        });
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Filtering</title>
+    <link href="../styles/kendo.common.min.css" rel="stylesheet" />
+    <link href="../styles/kendo.silver.min.css" rel="stylesheet" />
+
+    <!-- Scripts first jquery then kendo script-->
+    <script src="../scripts/jquery.min.js"></script>
+    <script src="../scripts/kendo.web.min.js"></script>
+</head>
+<body>
+
+    <div id="audi"></div>
+    <div id="non-audi"></div>
+
+    <script>
+
+        $(document).ready(function () {
+
+            var carsDataSource = new kendo.data.DataSource({
+                data: [
+                    { make: 'Opel', model: 'Insignia', year: 2009, power: 200, },
+                    { make: 'Audi', model: 'A5', year: 2008, power: 255 },
+                    { make: 'Audi', model: 'A8', year: 2009, power: 220 },
+                    { make: 'Audi', model: 'A3', year: 2005, power: 235 },
+                    { make: 'BMW', model: 'M3', year: 2010, power: 411 },
+                    { make: 'Mercedes', model: 'CL', year: 2011, power: 320 }
+                ],
+
+                aggregate: [
+                    { field: 'power', aggregate: 'sum' },
+                    { field: 'year', aggregate: 'max' },
+                ],
+
+                filter: {
+                    logic: 'and',
+                    filters: [
+                        { field: 'make', operator: 'eq', value: 'Audi' },
+                        { field: 'year', operator: 'gt', value: 2006 }
+                    ]
+                }
+            });
+
+            var agr = carsDataSource.aggregate();
+
+            agr.push({ field: 'power', aggregate: 'min' });
+
+            carsDataSource.aggregate(agr);
+
+            console.log(carsDataSource.aggregates().power.min);
+
+            carsDataSource.fetch(function () {
+                var dataSourceView = carsDataSource.view();
+                console.log(dataSourceView);
+                $('#audi').text('Cars: ' + dataSourceView.length + ' ' + getCars(dataSourceView));
+            });
+
+            carsDataSource.filter({
+                logic: 'or',
+                filters: [
+                    { field: 'make', operator: 'neq', value: 'Audi' }
+                ]
+            });
+
+            carsDataSource.fetch(function () {
+                var dataSourceView = carsDataSource.view();
+                console.log(dataSourceView);
+                $('#non-audi').text('Cars: ' + dataSourceView.length + ' ' + getCars(dataSourceView));
+            });
+
+            function getCars(dataSource) {
+                var result = '';
+
+                for (var i = 0; i < dataSource.length; i++) {
+                    result += dataSource[i].make + ' ' + dataSource[i].year + ' ';
+                }
+
+                return result;
+            }
+        });
+    </script>
+</body>
+</html>
+
