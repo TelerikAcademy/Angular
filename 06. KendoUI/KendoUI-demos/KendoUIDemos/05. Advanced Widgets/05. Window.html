@@ -16,16 +16,16 @@
     <script>
         $(document).ready(function () {
             $("#window").kendoWindow({
-                actions: ["Pin", "Refresh", "Maximize", "Minimize", "Close"],
-                draggable: true,
+                actions: ["Maximize", "Minimize", "Close"],
+                draggable: false,
                 height: "300px",
-                modal: false,
+                modal: true,
                 pinned: false,
                 position: {
                     top: 100,
                     left: 100
                 },
-                resizable: false,
+                resizable: true,
                 visible: false,
                 title: "Modal Window",
                 width: "500px"

@@ -32,24 +32,6 @@
         $(document).ready(function () {
             $('#grid').kendoGrid({
                 dataSource: carsDataSource,
-                editable: true,
-                toolbar: ['create'],
-                pageable: {
-                    input: true,
-                    numeric: false
-                },
-                scrollable: false,
-                sortable: true,
-                filterable: false,
-                groupable: true,
-                columns: [
-                    { field: "make", title: "Make", width: 130 },
-                    { field: "model", title: "Model", width: 100 },
-                    { field: "year", title: "Year", width: 80 },
-                    { field: "power", title: "Power", width: 80 },
-                    { field: "owner", title: "Owner", width: 80 },
-                    { command: ["destroy"], title: "&nbsp;", width: "90px" }
-                ]
             });
         });
     </script>

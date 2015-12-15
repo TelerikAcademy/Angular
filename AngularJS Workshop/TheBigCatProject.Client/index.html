@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>The Big Cat Project</title>
+    <meta charset="utf-8" />
+    <base href="/" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="styles/site.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-route.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-cookies.js"></script>
+</head>
+<body ng-app="catApp" ng-cloak ng-controller="MainController as vm">
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="../" class="navbar-brand">Bootswatch</a>
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar-main">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li ng-if="vm.globallySetCurrentUser">
+                        <a href="/cats/add">Add Cat</a>
+                    </li>
+                    <li>
+                        <a href="/cats">All Cats</a>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right" ng-if="!vm.globallySetCurrentUser">
+                    <li>
+                        <a href="/identity/register">Register</a>
+                    </li>
+                    <li>
+                        <a href="/identity/login">Login</a>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right" ng-if="vm.globallySetCurrentUser">
+                    <li>
+                        <a href="/identity/profile">{{vm.globallySetCurrentUser.DisplayName}}</a>
+                    </li>
+                    <li>
+                        <a href="#" ng-click="vm.logout()">Logout</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container" ng-view>
+
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <hr />
+
+    <footer>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                The BIG CAT PROJECT v. 0.0.1
+            </div>
+        </div>
+
+    </footer>
+    <script src="scripts/app/app.js"></script>
+    <script src="scripts/app/common/main-controller.js"></script>
+    <script src="scripts/app/common/data-service.js"></script>
+    <script src="scripts/app/identity/register-controller.js"></script>
+    <script src="scripts/app/identity/login-controller.js"></script>
+    <script src="scripts/app/cats/add-cat-controller.js"></script>
+    <script src="scripts/app/cats/search-cats-controller.js"></script>
+    <script src="scripts/app/cats/cats-service.js"></script>
+    <script src="scripts/app/cats/listed-cats-directive.js"></script>
+    <script src="scripts/app/home/home-controller.js"></script>
+    <script src="scripts/app/identity/auth-service.js"></script>
+    <script src="scripts/app/identity/identity-service.js"></script>
+</body>
+</html>

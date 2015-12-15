@@ -1,0 +1,11 @@
+﻿body {
+    margin-top: 60px;
+}
+
+.error {
+    color: purple;
+}
+
+.image-container img {
+    width: 100%;
+}

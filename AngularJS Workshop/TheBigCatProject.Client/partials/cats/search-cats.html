@@ -1,0 +1,45 @@
+﻿<div class="row">
+    <h1>All Cats</h1>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="form-group">
+                <label for="name" class="col-lg-2 control-label">Name</label>
+                <div class="col-lg-10">
+                    <input type="text" ng-model="request.name" class="form-control" id="name" placeholder="Name">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label for="age" class="col-lg-2 control-label">Age</label>
+                <div class="col-lg-10">
+                    <input type="number" ng-model="request.age" class="form-control" id="age" placeholder="Age">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label for="breed" class="col-lg-2 control-label">Breed</label>
+                <div class="col-lg-10">
+                    <select class="form-control" ng-model="request.breed" id="breed">
+                        <option value="">Select breed</option>
+                        <option value="0">Street</option>
+                        <option value="1">Persian</option>
+                        <option value="2">Siamese</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <button class="btn btn-primary" ng-click="vm.search(request)">Search</button>
+        </div>
+    </div>
+
+    <div listed-cats-directive></div>
+
+    <div class="row text-center">
+        <ul class="pagination">
+            <li ng-repeat="page in [1, 2, 3, 4, 5]" ng-class="page == vm.currentPage ? 'active' : ''"><a href="#" ng-click="vm.search(request, page)">{{page}}</a></li>
+        </ul>
+    </div>
+</div>
