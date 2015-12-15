@@ -1,7 +1,7 @@
 ﻿(function () {
     'use strict';
 
-    function SearchCatsController(cats) {
+    function SearchCatsController($scope, cats) {
         var vm = this;
         vm.currentPage = 1;
 
@@ -9,6 +9,13 @@
             .then(function (initialCats) {
                 vm.cats = initialCats;
             });
+
+        $scope.$watch('request.name', function (newVal, oldVal) {
+            cats.searchCats($scope.request)
+                .then(function (filteredCats) {
+                    vm.cats = filteredCats;
+                });
+        });
 
         vm.search = function (request, page) {
             request = request || {};
@@ -24,5 +31,5 @@
     }
 
     angular.module('catApp.controllers')
-        .controller('SearchCatsController', ['cats', SearchCatsController]);
+        .controller('SearchCatsController', ['$scope', 'cats', SearchCatsController]);
 }());
