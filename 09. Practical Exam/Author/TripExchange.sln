@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TripExchange.Web", "TripExchange.Web\TripExchange.Web.csproj", "{357A6D42-5C17-44A8-BFFB-E3DC22E5B206}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TripExchange.Models", "TripExchange.Models\TripExchange.Models.csproj", "{A3E05C27-E8F6-4510-B9C5-7D2DDE3B6AED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TripExchange.Data", "TripExchange.Data\TripExchange.Data.csproj", "{C4F20351-DE3A-4F6D-B20A-E6680CEBE50B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TripExchange.Common", "TripExchange.Common\TripExchange.Common.csproj", "{66158F75-1774-4A77-81DB-540AD9F3E5B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TripExchange.Client", "TripExchange.Client\TripExchange.Client.csproj", "{02336E6E-C416-4D9A-B435-899143E1A2D2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{357A6D42-5C17-44A8-BFFB-E3DC22E5B206}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{357A6D42-5C17-44A8-BFFB-E3DC22E5B206}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{357A6D42-5C17-44A8-BFFB-E3DC22E5B206}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{357A6D42-5C17-44A8-BFFB-E3DC22E5B206}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3E05C27-E8F6-4510-B9C5-7D2DDE3B6AED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3E05C27-E8F6-4510-B9C5-7D2DDE3B6AED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3E05C27-E8F6-4510-B9C5-7D2DDE3B6AED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3E05C27-E8F6-4510-B9C5-7D2DDE3B6AED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4F20351-DE3A-4F6D-B20A-E6680CEBE50B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4F20351-DE3A-4F6D-B20A-E6680CEBE50B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4F20351-DE3A-4F6D-B20A-E6680CEBE50B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4F20351-DE3A-4F6D-B20A-E6680CEBE50B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66158F75-1774-4A77-81DB-540AD9F3E5B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66158F75-1774-4A77-81DB-540AD9F3E5B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66158F75-1774-4A77-81DB-540AD9F3E5B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66158F75-1774-4A77-81DB-540AD9F3E5B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02336E6E-C416-4D9A-B435-899143E1A2D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02336E6E-C416-4D9A-B435-899143E1A2D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02336E6E-C416-4D9A-B435-899143E1A2D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02336E6E-C416-4D9A-B435-899143E1A2D2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

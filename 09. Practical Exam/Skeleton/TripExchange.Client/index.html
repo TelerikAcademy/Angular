@@ -1,0 +1,60 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Application</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="../css/toastr.min.css" />
+    <link rel="stylesheet" href="../css/app.css" />
+</head>
+<body ng-app="myApp" ng-cloak>
+    <div class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="#/" class="navbar-brand">Application</a>
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar-main">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#/partial1">Partial 1</a>
+                    </li>
+                    <li>
+                        <a href="#/partial2">Partial 2</a>
+                    </li>
+                </ul>
+                <div ng-include="'views/partials/login.html'"></div>
+            </div>
+        </div>
+    </div>
+    <div ng-view>
+    </div>
+    <hr />
+    <footer class="text-center" ng-cloak>
+        Copyright:<strong> <a href="http://telerikacademy.com/" target="_blank">Telerik Academy 2014</a></strong>
+        <br />
+        Powered by:<strong> <a href="http://angularjs.org/" target="_blank">AngularJS</a> and <a href="http://getbootstrap.com/" target="_blank">Twitter Bootstrap</a></strong>
+    </footer>
+    <hr />
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/toastr/toastr.min.js"></script>
+    <script src="lib/bootstrap/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-route.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-cookies.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/common/notifier.js"></script>
+    <script src="js/controllers/my-controller1.js"></script>
+    <script src="js/controllers/my-controller2.js"></script>
+    <script src="js/identity/auth.js"></script>
+    <script src="js/identity/authorization.js"></script>
+    <script src="js/identity/identity.js"></script>
+    <script src="js/identity/login-controller.js"></script>
+    <script src="js/identity/register-controller.js"></script>
+</body>
+</html>

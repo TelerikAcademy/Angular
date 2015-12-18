@@ -1,0 +1,87 @@
+﻿<div class="container">
+    <div class="jumbotron text-center">
+        <h1>Welcome to Trip Exchange</h1>
+        <h2>Find your way home!</h2>
+    </div>
+
+    <div class="row jumbotron">
+        <div class="col-md-3 text-center">
+            <div>
+                <strong>Trips</strong>
+            </div>
+            <div>
+                <span>{{vm.stats.trips}}</span>
+            </div>
+        </div>
+
+        <div class="col-md-3 text-center">
+            <div>
+                <strong>Finished Trips</strong>
+            </div>
+            <div>
+                <span>{{vm.stats.finishedTrips}}</span>
+            </div>
+        </div>
+
+        <div class="col-md-3 text-center">
+            <div>
+                <strong>Users</strong>
+            </div>
+            <div>
+                <span>{{vm.stats.users}}</span>
+            </div>
+        </div>
+
+        <div class="col-md-3 text-center">
+            <div>
+                <strong>Drivers</strong>
+            </div>
+            <div>
+                <span>{{vm.stats.drivers}}</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="panel panel-primary text-center">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Latest Trips</h3>
+                </div>
+                <div class="panel-body">
+                    <div all-trips />
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="panel panel-primary text-center">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Latest Drivers</h3>
+                </div>
+                <div class="panel-body">
+                    <table class="table table-bordered"">
+                        <tr>
+                            <th class="text-center">
+                                Name
+                            </th>
+                            <th class="text-center">
+                                Upcoming Trips
+                            </th>
+                            <th class="text-center">
+                                Total Trips
+                            </th>
+                        </tr>
+                        <tr ng-repeat="driver in vm.publicDrivers">
+                            <td class="text-center">
+                                <a href="#/drivers/{{driver.id}}">{{driver.name}}</a>
+                            </td>
+                            <td class="text-center">{{driver.numberOfUpcomingTrips}}</td>
+                            <td class="text-center">{{driver.numberOfTotalTrips}}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

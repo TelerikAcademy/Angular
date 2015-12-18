@@ -1,0 +1,78 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Trip Exchange</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="../css/toastr.min.css" />
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2015.3.1111/styles/kendo.common.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2015.3.1111/styles/kendo.default.min.css" type="text/css" />
+    <link rel="stylesheet" href="../css/app.css" />
+</head>
+<body ng-app="myApp" ng-cloak>
+    <div class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="#/" class="navbar-brand">Trip Exchange</a>
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar-main">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#/trips">Trips</a>
+                    </li>
+                    <li>
+                        <a href="#/">Drivers</a>
+                    </li>
+                </ul>
+                <div ng-include="'views/partials/identity/login.html'"></div>
+            </div>
+        </div>
+    </div>
+    <div ng-view>
+    </div>
+    <hr />
+    <footer class="text-center" ng-cloak>
+        Copyright:<strong> <a href="http://telerikacademy.com/" target="_blank">Telerik Academy 2014</a></strong>
+        <br />
+        Powered by:<strong> <a href="http://angularjs.org/" target="_blank">AngularJS</a> and <a href="http://getbootstrap.com/" target="_blank">Twitter Bootstrap</a></strong>
+    </footer>
+    <hr />
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/toastr/toastr.min.js"></script>
+    <script src="lib/bootstrap/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-route.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-cookies.min.js"></script>
+    <script src="http://kendo.cdn.telerik.com/2015.3.1111/js/kendo.core.min.js"></script>
+    <script src="http://kendo.cdn.telerik.com/2015.3.1111/js/kendo.calendar.min.js"></script>
+    <script src="http://kendo.cdn.telerik.com/2015.3.1111/js/kendo.popup.min.js"></script>
+    <script src="http://kendo.cdn.telerik.com/2015.3.1111/js/kendo.datepicker.min.js"></script>
+    <script src="http://kendo.cdn.telerik.com/2015.3.1111/js/kendo.timepicker.min.js"></script>
+    <script src="http://kendo.cdn.telerik.com/2015.3.1111/js/kendo.datetimepicker.min.js"></script>
+    <script src="http://kendo.cdn.telerik.com/2015.3.1111/js/kendo.angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/common/notifier.js"></script>
+    <script src="js/common/data.js"></script>
+    <script src="js/common/beautiful-date.js"></script>
+    <script src="js/home/home-controller.js"></script>
+    <script src="js/home/statistics-service.js"></script>
+    <script src="js/trips/cities-service.js"></script>
+    <script src="js/trips/trips-service.js"></script>
+    <script src="js/trips/trips-controller.js"></script>
+    <script src="js/trips/create-trip-controller.js"></script>
+    <script src="js/trips/trip-details-controller.js"></script>
+    <script src="js/trips/all-trips-directive.js"></script>
+    <script src="js/drivers/drivers-service.js"></script>
+    <script src="js/identity/auth.js"></script>
+    <script src="js/identity/authorization.js"></script>
+    <script src="js/identity/identity.js"></script>
+    <script src="js/identity/login-controller.js"></script>
+    <script src="js/identity/register-controller.js"></script>
+</body>
+</html>
