@@ -1,2 +1,2 @@
-# Single-Page-Applications
-Repository for the Single Page Applications course
+# Single-page Applications with Angular 2
+Repository for the Single Page Applications with Angular 2 course
