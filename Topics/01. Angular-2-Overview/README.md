@@ -28,9 +28,14 @@
   - Can be used with both JavaScript and [TypeScript](http://)
     - TypeScript is the recommended by Google
 
-#   Running Angular 2 Applications
+#   Start Developing Angular 2 Applications
 
-- How to run an Angular 2 application?
+- To start the development of Angular 2 applications:
+  1.  Install [Node.js](http://nodejs.org)
+    -
+  2.  Clone the **Angular 2 Quickstart application** [from github](https://github.com/angular/quickstart)
+  3.  `$ npm install`
+  4.  Run the application
 
 
 
