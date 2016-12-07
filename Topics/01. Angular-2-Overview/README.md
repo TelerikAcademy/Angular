@@ -1,7 +1,6 @@
 <!-- section start -->
 <!-- attr: { id:'title', class:'slide-title', hasScriptWrapper:true } -->
-# Single-page Applications with Angular 2
-##  Course Program, Evaluation, Exams, Resources
+# Introduction to Angular 2
 
 <div class="signature">
     <p class="signature-course">SPA Apps with Angular 2</p>
@@ -9,10 +8,6 @@
     <a href="http://academy.telerik.com" class="signature-link">http://academy.telerik.com</a>
 </div>
 
-
-<!-- section start -->
-<!-- attr: { id:'table-of-contents' } -->
-# Table of Contents
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', id:'coming-next' } -->
