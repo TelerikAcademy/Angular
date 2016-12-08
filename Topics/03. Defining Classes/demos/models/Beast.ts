@@ -1,7 +1,8 @@
+import { ICanHit } from './ICanHit';
 import { ICanBeHit } from './ICanBeHit';
 import { Creature } from "./Creature";
 
-export class Beast extends Creature {
+export class Beast extends Creature implements ICanHit {
     constructor(name: string, power: number, health: number) {
         super(name, power, health);
     }

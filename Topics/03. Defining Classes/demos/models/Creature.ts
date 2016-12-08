@@ -1,7 +1,6 @@
 import { ICanBeHit } from './ICanBeHit';
-import { ICanHit } from './ICanHit';
 
-export abstract class Creature implements ICanHit, ICanBeHit {
+export abstract class Creature implements ICanBeHit {
     private _name: string;
     public damage: number;
     public health: number;
@@ -23,8 +22,6 @@ export abstract class Creature implements ICanHit, ICanBeHit {
 
         this._name = newName;
     }
-
-    public abstract hit(other: ICanBeHit): string;
 
     public abstract takeHit(damage: number);
 

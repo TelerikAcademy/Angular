@@ -3,7 +3,7 @@ import { Power } from './Power';
 import { ICanBeHit } from './ICanBeHit';
 import { Alignment } from "./Alignment";
 
-import { Creature } from './Creature';
+import { Creature } from './Creature'
 
 
 export class Superhero extends Creature {
