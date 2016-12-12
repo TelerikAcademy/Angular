@@ -3,11 +3,10 @@ import { Component } from '@angular/core';
 @Component({
     selector: 'demo-two',
     templateUrl: './two-way.component.html'
-})
-export class TwoWayComponent {
+}) export class TwoWayComponent {
     title: string;
 
-    constructor(){
+    constructor() {
         this.title = 'Hello ngModel';
     }
 }

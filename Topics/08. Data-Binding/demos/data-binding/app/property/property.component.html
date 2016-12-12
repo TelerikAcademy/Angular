@@ -1,7 +1,7 @@
 <h3>Property binding</h3>
 
-<button [disabled]="isEnabled">Click</button>
-<button bind-disabled="isEnabled">Click - without syntax sugar</button>
+<button [disabled]="!isEnabled">Click</button>
+<button bind-disabled="!isEnabled">Click - without syntax sugar</button>
 <p [ngClass]="myClass">Styled with [ngclass]</p>
 
 <h3>Attribute binding</h3>
