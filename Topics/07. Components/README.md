@@ -10,7 +10,7 @@
     <a href="http://academy.telerik.com" class="signature-link">http://academy.telerik.com</a>
 </div>
 
-<!-- <img class="slide-image" showInPresentation="true"  src="imgs/angular.svg" style="height:40%; left:75%; top:50%; border-radius: 10px;" /> -->
+<!-- <img class="slide-image" showInPresentation="true"  src="imgs/angular.png" style="height:40%; left:75%; top:50%; border-radius: 10px;" /> -->
 
 <!-- section start -->
 <!-- attr: {id: 'table-of-contents'} -->
