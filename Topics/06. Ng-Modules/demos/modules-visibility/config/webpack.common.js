@@ -1,7 +1,8 @@
-var webpack = require('webpack');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var helpers = require('./helpers');
+const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const ContextReplacementPlugin = require('webpack/lib/ContextReplacementPlugin');
+const helpers = require('./helpers');
 
 module.exports = {
 	entry: {
@@ -45,6 +46,15 @@ module.exports = {
 
 		new HtmlWebpackPlugin({
 			template: './index.html'
-		})
+		}),
+
+		new ContextReplacementPlugin(
+        // The (\\|\/) piece accounts for path separators in *nix and Windows
+        /angular(\\|\/)core(\\|\/)src(\\|\/)linker/,
+        helpers.root(''), // location of your src
+        {
+          // your Angular Async Route paths relative to this root directory
+        }
+      )
 	]
 };

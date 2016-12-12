@@ -1,0 +1,36 @@
+{
+  "name": "angular2-systemjs",
+  "version": "1.0.0",
+  "description": "A systemjs starter for Angular",
+  "scripts": {
+    "start": "tsc && concurrently npm run tsc:w | npm run lite",
+    "lint": "tslint ./app/**/*.ts -t verbose",
+    "lite": "lite-server",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@angular/common": "~2.2.0",
+    "@angular/compiler": "~2.2.0",
+    "@angular/core": "~2.2.0",
+    "@angular/forms": "~2.2.0",
+    "@angular/http": "~2.2.0",
+    "@angular/platform-browser": "~2.2.0",
+    "@angular/platform-browser-dynamic": "~2.2.0",
+    "@angular/router": "~3.2.0",
+    "core-js": "^2.4.1",
+    "reflect-metadata": "^0.1.8",
+    "rxjs": "5.0.0-beta.12",
+    "systemjs": "^0.19.41",
+    "zone.js": "^0.6.25"
+  },
+  "devDependencies": {
+    "@types/core-js": "^0.9.35",
+    "@types/node": "0.0.2",
+    "concurrently": "^3.1.0",
+    "lite-server": "^2.2.2",
+    "tslint": "^4.0.2",
+    "typescript": "^2.0.3"
+  }
+}

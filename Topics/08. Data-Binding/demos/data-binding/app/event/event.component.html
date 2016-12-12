@@ -1,0 +1,10 @@
+<h3>Event binding</h3>
+<button (click)="showMessage()">Message</button>
+<br />
+<button (click)="mouseCoordinates($event)">Coordinates</button>
+<br />
+<input [value]="title" (input)="title=$event.target.value" >
+<p>{{title}}</p>
+
+<h3>Custom events</h3>
+<button (click)="onAlert()">Message</button>

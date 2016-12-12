@@ -1,0 +1,44 @@
+<h3>Interpolation</h3>
+<p>Interpolation: {{title}}</p>
+<p [textContent]="'Interpolation without syntax sugar: ' + title"></p>
+<p>Interpolation expression: {{2 + 2}}</p>
+<p>Interpolation method call: {{toUpper(title)}}</p>
+
+
+<!--<h3>Property binding</h3>
+
+<button [disabled]="isEnabled">Click</button>
+<button bind-disabled="isEnabled">Click - without syntax sugar</button>
+<p [ngClass]="myClass">Styled with [ngclass]</p>-->
+
+<!--<h3>Attribute binding</h3>
+
+<table border=1>
+  <tr><td [attr.colspan]="1 + 1">One-Two</td></tr>
+
+  <tr><td>Five</td><td>Six</td></tr>
+</table>-->
+
+<!--<h3>Class binding</h3>
+<p [class]="myClass">Styled with [class] - All or nothing</p>
+<p [class.myClass]="true">Styled with [class.name] - All or nothing</p>-->
+
+
+<!--<h3>Style binding</h3>
+<p [style.color]="'yellow'" [style.font-size.px]="40" [style.backgroundColor]="'black'">Styled Inline</p>-->
+
+
+<!--<h3>Event binding</h3>
+<button (click)="showMessage()">Message</button>
+<br />
+<button (click)="mouseCoordinates($event)">Coordinates</button>
+<br />
+<input [value]="title" (input)="title=$event.target.value" >-->
+
+
+<!--<h3>Custom events</h3>
+<button (click)="onAlert()">Message</button>-->
+
+
+<h3>Two way data binding</h3>
+<input type="text" [(ngModel)]="title" />
