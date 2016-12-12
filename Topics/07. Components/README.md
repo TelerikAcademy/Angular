@@ -335,7 +335,7 @@ export class HeroComponent {
 ```
 // app.component.ts
 @Component({
-  selector: 'demo-home',
+  selector: 'demo-app',
   template: `
     <demo-home>
       <h1 class="projected">My transcluded content!</h1>
@@ -412,8 +412,9 @@ export class HeroComponent {
 
 <div style="position: absolute; left:10%; width:100%; height:100%"><iframe src="https://embed.plnkr.co/KzXHQFS4xBKA3Jak5cy6/" frameborder="0" width=70% height=50%></iframe></div>
 
-
+<!-- attr: { hasScriptWrapper:true } -->
 # Questions
+
 <!-- <img class="slide-image" showInPresentation="true"  src="imgs/questions.jpg" style="height:40%; left:30%; top:30 border-radius: 10px;" /> -->
 
 

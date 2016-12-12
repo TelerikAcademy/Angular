@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-    // moduleId: module.id,
-    selector: 'demo-app',
-    template: '<div>Welcome</div>',
-    styles: [`div{
-		background-color: gray;
+  moduleId: module.id,
+  selector: 'demo-app',
+  templateUrl: './app.component.html',
+  styles: [`div{
+		background-color: cyan;
 		color: white;
 	}`]
 })

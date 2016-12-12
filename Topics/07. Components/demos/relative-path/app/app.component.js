@@ -16,10 +16,10 @@ var AppComponent = (function () {
 }());
 AppComponent = __decorate([
     core_1.Component({
-        // moduleId: module.id,
+        moduleId: module.id,
         selector: 'demo-app',
-        template: '<div>Welcome</div>',
-        styles: ["div{\n\t\tbackground-color: gray;\n\t\tcolor: white;\n\t}"]
+        templateUrl: './app.component.html',
+        styles: ["div{\n\t\tbackground-color: cyan;\n\t\tcolor: white;\n\t}"]
     }),
     __metadata("design:paramtypes", [])
 ], AppComponent);
