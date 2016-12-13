@@ -1,7 +1,6 @@
 <!-- section start -->
 
 <!-- attr: {id: 'title', class: 'slide-title', hasScriptWrapper: true} -->
-
 # Pipes and Directives
 ##  In Angular 2
 
@@ -13,6 +12,10 @@
 
 <!-- section start -->
 
+<!-- attr: {class:"slide-section"} --> 
+# Pipes Overview
+## What are Pipes? Built-in and Custom Pipes
+
 # Pipes Overview
 
 - What are pipes?
@@ -20,8 +23,8 @@
     - i.e. format a date, create strings to uppercase
     - sort, filter, etc...
 
-
-#   Built-in Pipes
+<!-- attr: { hasScriptWrapper: true, style:"font-size: 0.8em"} -->
+# Built-in Pipes
 
 - There are a number of built-in pipes
   - date, uppercase, etc...
@@ -40,6 +43,7 @@
     ```
     - Prints something like `Dec 13, 2016`
 
+<!-- attr: {class:"slide-section"} --> 
 #   Date Pipe
 ##  [Live Demo](http://)
 
@@ -51,19 +55,23 @@
   - Needs internatiolization polyfill
 - `decimal` formats numbers
 
+<!-- attr: {class:"slide-section"} --> 
 #   Other Built-in Pipes
 ##  [Live Demo](http://)
 
 <!-- section start -->
 
+<!-- attr: {class:"slide-section"} --> 
+# Custom Pipes
+## Create our pipes
+
+<!-- attr: {style: "font-size: 0.9em"}
 # Custom Pipes
 
 - Angular 2 provides a way to create custom pipes
   - Define a custom behavior
 - How?
   - Use the `@Pipe` decorator and implement `PipeTransform` interface
-
-# Custom Pipe for filtering Superheroes by powers
 
 - _Example:_
 
@@ -76,11 +84,12 @@ export FilterByPowerPipe implements PipeTransform {
 }
 ```
 
+<!-- attr: {class:"slide-section"} --> 
 # Custom Pipes
 ##  Live Demo
 
-<!-- <img class="slide-image" showInPresentation="true"  src="imgs/angular.png" style="height:40%; left:75%; top:50%; border-radius: 10px;" /> -->
 
+<!-- attr: {class:"slide-section"} --> 
 # Questions
 ##  Pipes and Directives
 <!-- <img class="slide-image" showInPresentation="true"  src="imgs/questions.jpg" style="height:40%; left:30%; top:30 border-radius: 10px;" /> -->

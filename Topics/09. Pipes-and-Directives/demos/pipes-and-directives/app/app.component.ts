@@ -48,8 +48,8 @@ export class AppComponent {
     this.number = 3.5;
     this.superheroes = SUPERHEROES;
     let powersObj = this.superheroes.reduce((allPowers, superhero) => {
-      superhero.powers.forEach(power => allPowers[power] = true);
-      return allPowers
+      superhero.powers.forEach((power: string) => allPowers[power] = true);
+      return allPowers;
     }, {});
     this.powers = Object.keys(powersObj).sort();
     this.power = this.powers[0];
