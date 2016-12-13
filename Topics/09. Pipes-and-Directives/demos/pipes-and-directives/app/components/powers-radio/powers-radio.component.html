@@ -1,0 +1,32 @@
+<ul class="powers-list">
+    <li>
+        <label>
+            <strong>All</strong>
+            <input type="radio" 
+                name="powersRadio"
+                
+                hightlight-item
+                hightlight-color="yellowgreen"
+                hightlight-select-class="powers-radio-list"
+
+                [value]='' 
+                (change)="onPowerChanged('')"
+             />
+        </label>
+    </li>
+    <li *ngFor="let power of powers | sort">
+        <label>
+            <strong>{{power}}</strong>
+            <input type="radio" 
+                name="powersRadio"
+                
+                hightlight-item
+                hightlight-color="yellowgreen"
+                hightlight-select-class="powers-radio-list"
+
+                [value]=power 
+                (change)="onPowerChanged(power)"
+             />
+        </label>
+    </li>
+</ul>
