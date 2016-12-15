@@ -12,7 +12,7 @@
 
 <!-- section start -->
 
-<!-- attr: {class:"slide-section"} --> 
+<!-- attr: {class:"slide-section"} -->
 # Pipes Overview
 ## What are Pipes? Built-in and Custom Pipes
 
@@ -43,7 +43,7 @@
     ```
     - Prints something like `Dec 13, 2016`
 
-<!-- attr: {class:"slide-section"} --> 
+<!-- attr: {class:"slide-section"} -->
 #   Date Pipe
 ##  [Live Demo](http://)
 
@@ -55,17 +55,17 @@
   - Needs internatiolization polyfill
 - `decimal` formats numbers
 
-<!-- attr: {class:"slide-section"} --> 
+<!-- attr: {class:"slide-section"} -->
 #   Other Built-in Pipes
 ##  [Live Demo](http://)
 
 <!-- section start -->
 
-<!-- attr: {class:"slide-section"} --> 
+<!-- attr: {class:"slide-section"} -->
 # Custom Pipes
 ## Create our pipes
 
-<!-- attr: {style: "font-size: 0.9em"}
+<!-- attr: {style: "font-size: 0.9em"} -->
 # Custom Pipes
 
 - Angular 2 provides a way to create custom pipes
@@ -84,12 +84,105 @@ export FilterByPowerPipe implements PipeTransform {
 }
 ```
 
-<!-- attr: {class:"slide-section"} --> 
+- Do not forget to add it in a module
+
+<!-- attr: {class:"slide-section"} -->
 # Custom Pipes
 ##  Live Demo
 
 
-<!-- attr: {class:"slide-section"} --> 
+<!-- section start -->
+
+<!-- attr: {class:"slide-section"} -->
+# Directives
+##  Component, Structure and Attribute
+
+# Directives
+
+- Directives aim to extends the static nature of HTML
+  - With directives we can create custom HTML elements, attributes and flow (if, for) inside of HTML
+- There are three types of directives
+  - Component (`@Component`)
+    - They create HTML elements
+  - Structure (`*ngIf`, `*ngFor`)
+    - Write simple programming logic in HTML
+  - Attribute
+    - Allow to define custom attributes
+
+#   Attribute Directives
+
+- To create Attribute directives:
+  1.  Create a class
+  2.  Mark it as `@Directive`
+  3.  Provide a `selector`
+    - The name of the attribute
+  4.  Do some pretty and hard things inside
+
+
+<!-- attr: {hasScriptWrapper: true, style: "font-size: 0.75em"} -->
+# Attribute Directives
+
+- Example:
+
+  - Directive definition:
+
+    ```js
+    @Directive({selector: '[highlight-item]'})
+    class HighlightItemDirective {
+      bgColor: string;
+      constructor(private elementRef: ElementRef) {
+        // elementRef is a reference to the
+        // DOM element, where the directive is used
+        this.bgColor = "yellow";
+      }
+
+      // Attach an event to the DOM element,
+      // where the directive is used
+      @HostListener('click') onItemClick() {
+           this.elementRef.nativeElement.parentElement.style.color = this.bgColor;
+           this.elementRef.nativeElement.parentElement.style.background = invert(this.bgColor);
+       }
+    }
+    ```
+
+  - Usage:
+
+    ```html
+      <div highlight-item> I am highlated</div>
+    ```
+
+    <!-- attr: {class:"slide-section"} -->
+# Attribute Directives
+##  [Live demo](http://)
+
+# Attribute Directives with More Behavior
+
+- Attribute directives can add more attributes to the HTML elements
+  - Using `@Input` properties
+    - More on `@Input` later
+  - i.e. set the highlight color
+
+<!-- attr: { hasScriptWrapper: true} -->
+# Attribute Directives with More Behavior
+- How?
+  - Just mark the `bgColor` property with `Input()`
+
+    ```js
+    @Input() bgColor: string;
+    ```
+
+  - And set it in the HTML:
+
+    ```html
+    <div highlight-item bgColor="purple"> I am highlated</div>
+    ```
+
+    <!-- attr: {class:"slide-section"} -->
+# Attribute Directives with More Behavior
+##  [Live demo](http://)
+
+<!-- section start -->
+<!-- attr: {class:"slide-section"} -->
 # Questions
 ##  Pipes and Directives
 <!-- <img class="slide-image" showInPresentation="true"  src="imgs/questions.jpg" style="height:40%; left:30%; top:30 border-radius: 10px;" /> -->

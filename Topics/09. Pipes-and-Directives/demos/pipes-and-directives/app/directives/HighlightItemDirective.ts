@@ -4,6 +4,7 @@ import { Directive, ElementRef, HostListener, Input } from '@angular/core';
 
 const DEFAULT_BG_COLOR = 'black',
     DEFAULT_HIGHLIGHT_SELECT_CLASS = 'highlight-item-selected';
+    
 @Directive({
     selector: '[hightlight-item]'
 })
