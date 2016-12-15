@@ -1,0 +1,17 @@
+input {
+    display: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+label {
+    display: inline-block;
+    padding: 5px 15px;
+}

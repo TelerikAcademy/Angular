@@ -1,0 +1,9 @@
+<powers-radio-buttons [powers]=powers (selectedPowerChanged)="onSelectedPowerChanged($event)">
+</powers-radio-buttons>
+
+<hr>
+<ul class="superheroes-list">
+    <li class="superhero-item" *ngFor="let superhero of (superheroes | filterByPower: power | sort:'-name')">
+        <superhero-item [superhero]=superhero></superhero-item>
+    </li>
+</ul>
