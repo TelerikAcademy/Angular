@@ -1,0 +1,21 @@
+{
+	"version": "0.2.0",
+	"configurations": [{
+		"name": "Launch",
+		"type": "chrome",
+		"request": "launch",
+		"url": "http://localhost:3000/",
+		"port": 9223,
+		"sourceMaps": true,
+		"diagnosticLogging": true,
+		"webRoot": "${workspaceRoot}",
+		"userDataDir": "${workspaceRoot}/out/chrome"
+	}, {
+		"name": "Attach to Chrome, with sourcemaps",
+		"type": "chrome",
+		"request": "attach",
+		"port": 9222,
+		"sourceMaps": true,
+		"webRoot": "${workspaceRoot}"
+	}]
+}
