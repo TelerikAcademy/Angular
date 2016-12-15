@@ -165,9 +165,9 @@
 	 pipeSort.transform(this.movies, [sort, order]);
 	```
 
-1. Now just finish the task. From now on it you are on your own.
+1. Now just finish the task. From now on you are on your own.
 	- The other tasks are not so hard to be implemented
-
+	- Ask the trainers :)
 
 
 
