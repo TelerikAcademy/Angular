@@ -16,6 +16,9 @@
 <!-- attr: {id: 'table-of-contents'} -->
 # Table of Contents
 - Services
+- Dependency Injection in Angular
+  - How it works
+  - How to use it
 
 
 <!-- section start -->
