@@ -1,0 +1,9 @@
+<h1>Side</h1>
+<li *ngFor="let user of users">
+  {{user}}
+</li>
+
+<input type="text" #inputBox>
+
+<button (click)="add(inputBox.value)">Add</button>
+<button (click)="logAll(inputBox.value)">Log Users</button>
