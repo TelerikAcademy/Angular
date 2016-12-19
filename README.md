@@ -30,6 +30,23 @@ Repository for the course [Angular-2](http://telerikacademy.com/Courses/Courses/
 
 ##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="18"/>Slides](https://rawgit.com/TelerikAcademy/Angular-2/master/Topics/08.%20Data-Binding/index.html) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos](/Topics/07.%20Components/demos) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/homework.png" height="15">Tasks](/Topics/07.%20Components/homework)
 
+
+### [09. Pipes-and-Directives](./Topics/09. Pipes-and-Directives)
+
+##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="18"/>Slides](https://rawgit.com/TelerikAcademy/Angular-2/master/Topics/09.%20Pipes-and-Directives/index.html) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos](/Topics/09.%20Pipes-and-Directives/demos) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/homework.png" height="15">Tasks](/Topics/07.%20Components/homework)
+
+### [10. Forms-and-Form-controls](./Topics/10. Forms-and-Form-controls)
+
+##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="18"/>Slides](https://rawgit.com/TelerikAcademy/Angular-2/master/Topics/10.%20Forms-and-Form-controls/index.html) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos](/Topics/10.%20Forms-and-Form-controls/demos) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/homework.png" height="15">Tasks](/Topics/07.%20Components/homework)
+
+### [11. Angular-CLI](./Topics/11. Angular-CLI)
+
+##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="18"/>Slides](https://rawgit.com/TelerikAcademy/Angular-2/master/Topics/11.%20Angular-CLI/index.html) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos](/Topics/11.%20Angular-CLI/demos) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/homework.png" height="15">Tasks](/Topics/07.%20Components/homework)
+
+### [12. Services-and-DI](./Topics/12. Services-and-DI)
+
+##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="18"/>Slides](https://rawgit.com/TelerikAcademy/Angular-2/master/Topics/12.%20Services-and-DI/index.html) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos](/Topics/12.%20Services-and-DI/demos) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/homework.png" height="15">Tasks](/Topics/07.%20Components/homework)
+
 Angular 2 е най-новата технология, чиято първа стабилна версия стана публична през септември 2016 г. Angular 2 е технология за създаване на front-end-а на уеб приложения по лесен и бърз начин. По подразбиране Angular 2 ни дава възможност да използваме на TypeScript, но също така може да бъдат използвани JavaScript или Dart. Курсът ще се води на TypeScript.
 
 ##  Какво ще покрием в курса?
