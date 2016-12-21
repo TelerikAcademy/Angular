@@ -15,7 +15,10 @@
 <!-- section start -->
 <!-- attr: {id: 'table-of-contents'} -->
 # Table of Contents
-- Definitions
+- Observables
+- Reactive Extensions
+- RxJs
+- Http
 
 <!-- section start -->
 <!-- attr: {id: '', class: 'slide-section', showInPresentation:true, hasScriptWrapper: true} -->
