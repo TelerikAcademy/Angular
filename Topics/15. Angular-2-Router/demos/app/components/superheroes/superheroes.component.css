@@ -1,0 +1,23 @@
+.superhero-secret-identity {
+    display: none;
+}
+
+.btn-uncover:hover~.superhero-secret-identity {
+    display: block;
+}
+
+.superhero-image {
+    max-width: 100%;
+}
+
+.superhero-form-container {
+    position: relative;
+    background: white;
+}
+
+.superhero-form {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+}
