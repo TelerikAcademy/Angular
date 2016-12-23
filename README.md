@@ -47,6 +47,18 @@ Repository for the course [Angular-2](http://telerikacademy.com/Courses/Courses/
 
 ##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="18"/>Slides](https://rawgit.com/TelerikAcademy/Angular-2/master/Topics/12.%20Services-and-DI/index.html) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos](/Topics/12.%20Services-and-DI/demos) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/homework.png" height="15">Tasks](/Topics/07.%20Components/homework)
 
+### [13. Angular-Lifecycle](./Topics/13. Angular-Lifecycle)
+
+##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="18"/>Slides](https://rawgit.com/TelerikAcademy/Angular-2/master/Topics/13.%20Angular-Lifecycle/index.html) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos](/Topics/13.%20Angular-Lifecycle/demos) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/homework.png" height="15">Tasks](/Topics/07.%20Components/homework)
+
+### [14. Http-Observables](./Topics/14. Http-Observables)
+
+##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="18"/>Slides](https://rawgit.com/TelerikAcademy/Angular-2/master/Topics/14.%20Http-Observables/index.html) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos](/Topics/14.%20Http-Observables/demos) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/homework.png" height="15">Tasks](/Topics/07.%20Components/homework)
+
+### [15. Angular-2-Router](./Topics/15. Angular-2-Router)
+
+##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="18"/>Slides](https://rawgit.com/TelerikAcademy/Angular-2/master/Topics/15.%20Angular-2-Router/index.html) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos](/Topics/15.%20Angular-2-Router/demos) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/homework.png" height="15">Tasks](/Topics/07.%20Components/homework)
+
 Angular 2 е най-новата технология, чиято първа стабилна версия стана публична през септември 2016 г. Angular 2 е технология за създаване на front-end-а на уеб приложения по лесен и бърз начин. По подразбиране Angular 2 ни дава възможност да използваме на TypeScript, но също така може да бъдат използвани JavaScript или Dart. Курсът ще се води на TypeScript.
 
 ##  Какво ще покрием в курса?
