@@ -15,10 +15,7 @@
 <!-- section start -->
 <!-- attr: {id: 'table-of-contents'} -->
 # Table of Contents
-- Observables
-- Reactive Extensions
-- RxJs
-- Http
+- Definitions
 
 <!-- section start -->
 <!-- attr: {id: '', class: 'slide-section', showInPresentation:true, hasScriptWrapper: true} -->
@@ -72,14 +69,6 @@ const subscription = source
   .forEach(price => console.log(`Prices higher than $30: ${price}`));
 ``` 
 
-<!-- attr: { hasScriptWrapper:true } -->
-# RxJs
-
-- The RxJS library is large
-- You should include only necessary features
-  - **Observable** in the **rxjs/Observable**
-  - Include all the operators you need 
-
 <!-- attr: { hasScriptWrapper:true, style:'font-size: 0.9em' } -->
 # Cold vs Hot
 
@@ -129,9 +118,6 @@ const subscription = source
 - Angular's http service delegates the client/server communication tasks to a helper service called the XHRBackend
 - Register for HTTP services
   - Import the **HttpModule**
-
-- The Angular HTTP library simplifies application programming with the XHR and JSONP APIs
-
 <!-- attr: { hasScriptWrapper:true } -->
 # Http
 
