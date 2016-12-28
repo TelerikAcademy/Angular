@@ -44,45 +44,45 @@
 
 | Trainer 1            | Trainer 2     | Time  |
 | -------------------- | ------------- | ----- |
-| Code Snails          | JS-Ninja      | 16:00 |
-| Blizzard             | Component13   | 16:20 |
-| Kendo UI             | Online-ninjas | 16:40 |
-| Component14          | Angular3      | 17:00 |
-| Metanoia             | Component22   | 17:20 |
-| **Break**            |  **Break**    | 17:40 |
-| lelq mara            | Component9    | 18:00 |
-| ThreeAngular         | Component20   | 18:20 |
-| Component5           | Component7    | 18:40 |
-| Evil Geniuses        | FrontFret     | 19:00 |
-| KIK                  | Component18   | 19:20 |
-| **Break**            |  **Break**    | 19:40 |
-| Oranges              | BMX           | 20:00 |
-| Pekov Naydenova Team | Component3    | 20:20 |
-| Component25          | Skara team    | 20:40 |
-| Component10          | Component1    | 21:00 |
-| .net stemo           | Component11   | 21:20 |
-| Component19          | Angular 363   | 21:40 |
+| Code Snails          | JS-Ninja      | 10:30 |
+| Blizzard             | Component13   | 10:50 |
+| Kendo UI             | Online-ninjas | 11:10 |
+| Component14          | Angular3      | 11:30 |
+| Metanoia             | Component22   | 11:50 |
+| **Break**            |  **Break**    | 12:10 |
+| lelq mara            | Component9    | 12:30 |
+| ThreeAngular         | Component20   | 12:50 |
+| Component5           | Component7    | 13:10 |
+| Evil Geniuses        | FrontFret     | 13:30 |
+| KIK                  | Component18   | 13:50 |
+| **Break**            |  **Break**    | 14:10 |
+| Oranges              | BMX           | 14:30 |
+| Pekov Naydenova Team | Component3    | 14:50 |
+| Component25          | Skara team    | 15:10 |
+| Component10          | Component1    | 15:30 |
+| .net stemo           | Component11   | 15:50 |
+| Component19          | Angular 363   | 16:10 |
 
 
 ##  Friday, January 6, 2017
 
 | Trainer 1        | Trainer 2         | Time  |
 | ---------------- | ----------------- | ----- |
-| The Members      | SLAYER            | 16:00 |
-| Blubito          | Меркурий          | 16:20 |
-| Daniels          | CredoShit         | 16:40 |
-| DreamTeamPlovdiv | Component24       | 17:00 |
-| **Break**        |  **Break**        | 17:20 |
-| Tyche 2          | Slow and curious  | 17:40 |
-| Component2       | Component16       | 18:00 |
-| Component23      | Component15       | 18:20 |
-| The A-Team       | Zenith-Ipon       | 18:40 |
-| Component26      | G Nerds           | 19:00 |
-| **Break**        |  **Break**        | 19:20 |
-| No name          | No Fear For Beer  | 19:40 |
-| Component17      | Component4        | 20:00 |
-| Triangular       | Team_Hard_Ailyaks | 20:20 |
-| Melons           | Component6        | 20:40 |
-| Component21      | Component12       | 21:00 |
-| JediKnights      | Component8        | 21:20 |
-| СинШао           |                   | 21:40 |
+| The Members      | SLAYER            | 10:30 |
+| Blubito          | Меркурий          | 10:50 |
+| Daniels          | CredoShit         | 11:10 |
+| DreamTeamPlovdiv | Component24       | 11:30 |
+| **Break**        |  **Break**        | 11:50 |
+| Tyche 2          | Slow and curious  | 12:10 |
+| Component2       | Component16       | 12:30 |
+| Component23      | Component15       | 12:50 |
+| The A-Team       | Zenith-Ipon       | 13:10 |
+| Component26      | G Nerds           | 13:30 |
+| **Break**        |  **Break**        | 13:50 |
+| No name          | No Fear For Beer  | 14:10 |
+| Component17      | Component4        | 14:30 |
+| Triangular       | Team_Hard_Ailyaks | 14:50 |
+| Melons           | Component6        | 15:10 |
+| Component21      | Component12       | 15:30 |
+| JediKnights      | Component8        | 15:50 |
+| СинШао           |                   | 16:10 |
