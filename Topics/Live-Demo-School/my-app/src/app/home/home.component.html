@@ -1,0 +1,14 @@
+<form (ngSubmit)="onSubmit(f)" class="col-md-offset-3 col-md-6" #f="ngForm">
+  <div *ngIf="!f.valid && f.touched" class="alert-danger">Form is invalid</div>
+  <div class="form-group">
+    <label >Username</label>
+    <input name="username" class="form-control" ngModel required pattern="[A-Za-z0-9\.]{3,}">
+  </div>
+  
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input name="email" class="form-control" ngModel>
+  </div>
+  <input type="submit" value="Submit" class="btn btn-primary" [disabled]="!f.valid">
+
+</form>
