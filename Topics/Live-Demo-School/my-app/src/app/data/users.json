@@ -1,4 +1,7 @@
 [
     { "name": "Pesho", "age": 10, "egn": "1231213123" },
-    { "name": "Maria", "age": 15 }
+    { "name": "Maria", "age": 12, "egn": "1231213123" },
+    { "name": "Ivan", "age": 11, "egn": "1231213123"},
+    { "name": "Gosho", "age": 14, "egn": "1231213123" },
+    { "name": "Petya", "age": 10, "egn": "1231213123" }
 ]

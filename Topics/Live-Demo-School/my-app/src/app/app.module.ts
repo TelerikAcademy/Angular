@@ -8,7 +8,6 @@ import { AppComponent } from './app.component';
 import { HomeModule } from './home/home.module';
 import { CoreComponent } from './core/core.component';
 import { UsersComponent } from './users/users.component';
-import { UserComponent } from './user/user.component'
 import { HomeComponent } from './home/home.component'
 import {UsersService} from './users.service'
 
@@ -28,7 +27,6 @@ const appRoutes: Routes = [
     AppComponent,
     CoreComponent,
     UsersComponent,
-    UserComponent,
     NotFoundComponent
   ],
   imports: [

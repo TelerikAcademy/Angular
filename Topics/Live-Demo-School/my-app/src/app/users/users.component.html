@@ -1,7 +1,7 @@
-<p>
+<h1>
   List of users
-</p>
+</h1>
 <br>
-<ul>
-  <li *ngFor="let user of users">{{user.name}} - {{user.age}} - {{user.egn}}</li>
+<ul class="list-group">
+  <li *ngFor="let user of users" class="list-group-item">{{user.name}} - {{user.age}} - {{user.egn}}</li>
 </ul>
