@@ -2,10 +2,10 @@
 
 <!-- attr: {id: 'title', class: 'slide-title', hasScriptWrapper: true} -->
 # Forms and form controls
-## In Angular 2
+## In Angular
 
 <div class="signature">
-    <p class="signature-course">Angular 2</p>
+    <p class="signature-course">Angular</p>
     <p class="signature-initiative">Telerik Software Academy</p>
     <a href="http://academy.telerik.com" class="signature-link">http://academy.telerik.com</a>
 </div>
@@ -30,9 +30,9 @@
   - Text fields, radio buttons, checkboxes, dropdown lists, etc...
 
 <!-- attr: {hasScriptWrapper: true} -->
-# Forms in Angular 2
+# Forms in Angular
 
-- Angular 2 generates HTML and so the forms can be generated as usual:
+- Angular generates HTML and so the forms can be generated as usual:
 
   ```html
   <form method="..." action="..." >
@@ -40,13 +40,13 @@
   </form>
   ```
 
-- Yet, with data-binding, Angular 2 provides a easier way to work with forms
+- Yet, with data-binding, Angular provides a easier way to work with forms
 
 
 <!-- attr: {showInPresentation: true, style:'font-size:1.1em'}  -->
-# Forms in Angular 2
+# Forms in Angular
 
-- Angular 2 has two-way data-binding between an object in the component and the input fields from the template
+- Angular has two-way data-binding between an object in the component and the input fields from the template
   - Using `ngModel`
   - Updates data from the component to the view, as well as from the view to the component
 
@@ -55,7 +55,7 @@
   - Provides the directive `ngModel`
 
 <!-- attr: {showInPresentation: true}  -->
-# Forms in Angular 2: Example
+# Forms in Angular: Example
 - The component
   ```js    
   @Component({/* ... */ })
@@ -76,7 +76,7 @@
 
 
 <!-- attr: {showInPresentation: true, hasScriptWrapper: true}  -->
-# Forms in Angular 2: Example
+# Forms in Angular: Example
 
 - Template:
 
@@ -103,8 +103,8 @@
 <!-- attr: { showInPresentation: true, hasScriptWrapper: true} -->
 # Free Training @ Telerik Academy
 
-- Angular 2 Course
-  - [Angular 2](http://academy.telerik.com/student-courses/web-design-and-ui/spa-applications-with-angular2/about)
+- Angular Course
+  - [Angular](http://academy.telerik.com/student-courses/web-design-and-ui/spa-applications-with-angular2/about)
 - Telerik Software Academy
   - [telerikacademy.com](https://telerikacademy.com)
 - Telerik Academy @ Facebook

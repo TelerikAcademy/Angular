@@ -5,7 +5,7 @@
 # Angular Components
 ## @Component, Templates
 <div class="signature">
-    <p class="signature-course">Angular 2</p>
+    <p class="signature-course">Angular</p>
     <p class="signature-initiative">Telerik Software Academy</p>
     <a href="http://academy.telerik.com" class="signature-link">http://academy.telerik.com</a>
 </div>
@@ -120,8 +120,8 @@ export class HeroComponent {
 
 <!-- attr: { hasScriptWrapper:true } -->
 # Shadow DOM Angular
-- **Components** in Angular 2 can be shared across applications
-- **Components** in Angular 2 are not **web components**, but they take advantage of them
+- **Components** in Angular can be shared across applications
+- **Components** in Angular are not **web components**, but they take advantage of them
 - Whenever we create a component, Angular puts it’s template into a `shadowRoot`, which is the **Shadow DOM** of that particular component
 <div style="position: absolute; left:10%; width:100%"><iframe src="https://embed.plnkr.co/aY2Bt4AsUcbsfesvoORX/" frameborder="0" width=70%></iframe></div>
 
@@ -421,8 +421,8 @@ export class HeroComponent {
 <!-- attr: { showInPresentation: true, hasScriptWrapper: true} -->
 # Free Training @ Telerik Academy
 
-- Angular 2 Course
-  - [Angular 2](http://academy.telerik.com/student-courses/web-design-and-ui/spa-applications-with-angular2/about)
+- Angular Course
+  - [Angular](http://academy.telerik.com/student-courses/web-design-and-ui/spa-applications-with-angular2/about)
 - Telerik Software Academy
   - [telerikacademy.com](https://telerikacademy.com)
 - Telerik Academy @ Facebook

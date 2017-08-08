@@ -2,6 +2,6 @@ import { Component } from '@angular/core';
 
 @Component({
 	selector: 'demo-app',
-	template: `<div>Hello Angular 2 - SystemJS</div>`
+	template: `<div>Hello Angular - SystemJS</div>`
 })
 export class AppComponent { }

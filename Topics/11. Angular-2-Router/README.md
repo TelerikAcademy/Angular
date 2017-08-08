@@ -1,11 +1,11 @@
 <!-- section start -->
 
 <!-- attr: {id: 'title', class: 'slide-title', hasScriptWrapper: true} -->
-# Angular 2 Router
+# Angular Router
 ## Creating Different Routes of the Application
 
 <div class="signature">
-    <p class="signature-course">Angular 2</p>
+    <p class="signature-course">Angular</p>
     <p class="signature-initiative">Telerik Software Academy</p>
     <a href="http://academy.telerik.com" class="signature-link">http://academy.telerik.com</a>
 </div>
@@ -46,12 +46,12 @@
 <!-- slide section -->
 
 <!-- attr: {class:"slide-section"} -->
-#   The Angular 2 Router
+#   The Angular Router
 ##  Or just "the router"
 
-# The Angular 2 Router
+# The Angular Router
 
-- Angular 2 has a pretty good router
+- Angular has a pretty good router
   - It is a separate package `@angular/router`
       - not part of the official `@angular/core`
   - Supports multiple routes, route parameters, query parameters, regex routes, etc...
@@ -59,7 +59,7 @@
     - Just register a mapping between a URL and a `Component`
 
 <!-- attr: {style: 'font-size: 0.75em', hasScriptWrapper: true} -->
-# Configuration of the Angular 2 Router
+# Configuration of the Angular Router
 
 - Install `@angular/router`
 
@@ -82,12 +82,12 @@
   - This is the placeholder for the different pages
 
 <!-- attr: {class: 'slide-section'} -->
-# Configuration of Angular 2 Router
+# Configuration of Angular Router
 ##  [Demo](http://)
 
 
 <!-- attr: {style: 'font-size: 0.85em'} -->
-# Angular 2 Routes
+# Angular Routes
 
 - The router supports route and query parameters
   - Route parameters are defined using `ROUTE_URL/:id` syntax
@@ -110,7 +110,7 @@
 <!-- attr: {style: 'font-size: 0.8em'} -->
 # Route Guards
 
-- Routes in the Angular 2 Router can have one or many guards
+- Routes in the Angular Router can have one or many guards
   - i.e. operations that can be executed before the actual route is reached
   - Can be used to limit the access to certain routes, load data before hand, etc...
 - The route guards are:
@@ -158,8 +158,8 @@
 <!-- attr: { showInPresentation: true, hasScriptWrapper: true} -->
 # Free Training @ Telerik Academy
 
-- Angular 2 Course
-  - [Angular 2](http://academy.telerik.com/student-courses/web-design-and-ui/spa-applications-with-angular2/about)
+- Angular Course
+  - [Angular](http://academy.telerik.com/student-courses/web-design-and-ui/spa-applications-with-angular2/about)
 - Telerik Software Academy
   - [telerikacademy.com](https://telerikacademy.com)
 - Telerik Academy @ Facebook

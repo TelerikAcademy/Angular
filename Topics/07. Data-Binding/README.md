@@ -5,7 +5,7 @@
 # Angular Data Binding
 ## {{}} () [] [()]
 <div class="signature">
-    <p class="signature-course">Angular 2</p>
+    <p class="signature-course">Angular</p>
     <p class="signature-initiative">Telerik Software Academy</p>
     <a href="http://academy.telerik.com" class="signature-link">http://academy.telerik.com</a>
 </div>
@@ -44,7 +44,7 @@
 <!-- attr: { hasScriptWrapper:true } -->
 # Data Binding Types
 
-- There are a four ways to bind data in Angular 2:
+- There are a four ways to bind data in Angular:
   - **interpolation** - `{{name}}`
   - **property binding** - `[innerHTML]`
   - **two-way binding** - `[(name)]`
@@ -269,7 +269,7 @@ showAlert(event) { //doSomething with the event }
 <!-- attr: { hasScriptWrapper:true } -->
 # Banana in a box
 
-- Angular 2 doesn’t come with built-in two-way data binding anymore
+- Angular does not come with built-in two-way data binding anymore
 - APIs that allow to implement this type of binding using property and event bindings
 - We want to both display a data property 
 - We want to update that property when the user makes changes
@@ -345,8 +345,8 @@ showAlert(event) { //doSomething with the event }
 <!-- attr: { showInPresentation: true, hasScriptWrapper: true} -->
 # Free Training @ Telerik Academy
 
-- Angular 2 Course
-  - [Angular 2](http://academy.telerik.com/student-courses/web-design-and-ui/spa-applications-with-angular2/about)
+- Angular Course
+  - [Angular](http://academy.telerik.com/student-courses/web-design-and-ui/spa-applications-with-angular2/about)
 - Telerik Software Academy
   - [telerikacademy.com](https://telerikacademy.com)
 - Telerik Academy @ Facebook

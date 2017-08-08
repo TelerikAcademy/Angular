@@ -5,7 +5,7 @@
 # Architecture and Setup
 ## Building blocks, structure, module bundlers
 <div class="signature">
-    <p class="signature-course">Angular 2</p>
+    <p class="signature-course">Angular</p>
     <p class="signature-initiative">Telerik Software Academy</p>
     <a href="http://academy.telerik.com" class="signature-link">http://academy.telerik.com</a>
 </div>
@@ -15,7 +15,7 @@
 <!-- section start -->
 <!-- attr: {id: 'table-of-contents'} -->
 # Table of Contents
-* What is Angular 2
+* What is Angular
 * Architecture
 * Setup your project
 
@@ -24,8 +24,8 @@
 <!-- # Definitions and Architecture  -->
 
 <!-- attr: { hasScriptWrapper:true } -->
-# What is Angular 2
-*  Angular 2 is a framework for building client applications in HTML and either JavaScript or a language like TypeScript that compiles to JavaScript.
+# What is Angular
+*  Angular is a framework for building client applications in HTML and either JavaScript or a language like TypeScript that compiles to JavaScript.
 
 <!-- <img class="slide-image" showInPresentation="true"  src="imgs/overview.png" style="height:40%; left:25%; top:50%; border-radius: 10px;" /> -->
 
@@ -204,7 +204,7 @@ constructor(private service: HeroService) { }
 
 <!-- attr: { hasScriptWrapper:true } -->
 # Packages we need
-- We will need npm packages to be able to develop Angular 2 applications
+- We will need npm packages to be able to develop Angular applications
 - **package.json** is the file which takes care for the packages we need
 
 <!-- attr: { hasScriptWrapper:true } -->
@@ -343,8 +343,8 @@ constructor(private service: HeroService) { }
 <!-- attr: { showInPresentation: true, hasScriptWrapper: true} -->
 # Free Training @ Telerik Academy
 
-- Angular 2 Course
-  - [Angular 2](http://academy.telerik.com/student-courses/web-design-and-ui/spa-applications-with-angular2/about)
+- Angular Course
+  - [Angular](http://academy.telerik.com/student-courses/web-design-and-ui/spa-applications-with-angular2/about)
 - Telerik Software Academy
   - [telerikacademy.com](https://telerikacademy.com)
 - Telerik Academy @ Facebook

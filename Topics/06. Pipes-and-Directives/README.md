@@ -2,10 +2,10 @@
 
 <!-- attr: {id: 'title', class: 'slide-title', hasScriptWrapper: true} -->
 # Pipes and Directives
-##  In Angular 2
+##  In Angular
 
 <div class="signature">
-    <p class="signature-course">Angular 2</p>
+    <p class="signature-course">Angular</p>
     <p class="signature-initiative">Telerik Software Academy</p>
     <a href="http://academy.telerik.com" class="signature-link">http://academy.telerik.com</a>
 </div>
@@ -68,7 +68,7 @@
 <!-- attr: {style: "font-size: 0.9em"} -->
 # Custom Pipes
 
-- Angular 2 provides a way to create custom pipes
+- Angular provides a way to create custom pipes
   - Define a custom behavior
 - How?
   - Use the `@Pipe` decorator and implement `PipeTransform` interface
@@ -190,8 +190,8 @@ export FilterByPowerPipe implements PipeTransform {
 <!-- attr: { showInPresentation: true, hasScriptWrapper: true} -->
 # Free Training @ Telerik Academy
 
-- Angular 2 Course
-  - [Angular 2](http://academy.telerik.com/student-courses/web-design-and-ui/spa-applications-with-angular2/about)
+- Angular Course
+  - [Angular](http://academy.telerik.com/student-courses/web-design-and-ui/spa-applications-with-angular2/about)
 - Telerik Software Academy
   - [telerikacademy.com](https://telerikacademy.com)
 - Telerik Academy @ Facebook

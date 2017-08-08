@@ -5,7 +5,7 @@
 # Angular CLI
 ## ng serve
 <div class="signature">
-    <p class="signature-course">Angular 2</p>
+    <p class="signature-course">Angular</p>
     <p class="signature-initiative">Telerik Software Academy</p>
     <a href="http://academy.telerik.com" class="signature-link">http://academy.telerik.com</a>
 </div>
@@ -33,7 +33,7 @@
 # Angular CLI
 
 - A command line interface for Angular
-- Creating Angular 2 projects has never been faster than with the Angular CLI
+- Creating Angular projects has never been faster than with the Angular CLI
 
 <!-- <img class="slide-image" showInPresentation="true"  src="imgs/cli-logo.png" style="width:60%; left:15%; top:45%; border-radius: 10px;" /> -->
 
@@ -44,7 +44,7 @@
   - Create your application
   - Configure TypeScript
   - Configure Typings
-  - Configure module bundler 
+  - Configure module bundler/loader 
   - Creating components, directives, pipes
 
 
@@ -62,11 +62,27 @@
 - One simple command aaand we are all done 
 
 ```
-npm install -g angular-cli
+npm install -g @angular/cli
 ```
 
 <!-- <img class="slide-image" showInPresentation="true"  src="./imgs/wow.jpg" style="width:30%; left:5%; top:55%; border-radius: 10px;" /> -->
 
+
+<!-- attr: { hasScriptWrapper:true } -->
+# Verify installation
+
+- We could type 
+
+```
+ng -v
+```
+or
+
+```
+ng --version
+```
+
+- This will gives us information about the installed version of **Angular CLI**
 
 <!-- section start -->
 <!-- attr: {id: '', class: 'slide-section', showInPresentation:true, hasScriptWrapper: true} -->
@@ -75,7 +91,7 @@ npm install -g angular-cli
 <!-- <img class="slide-image" showInPresentation="true"  src="imgs/cli.jpg" style="width:40%; left:30%; top:45%; border-radius: 10px;" /> -->
 
 <!-- attr: { hasScriptWrapper:true } -->
-# Generating and Serve
+# Create new project
 
 ```
 ng new[init] PROJECT_NAME
@@ -86,15 +102,10 @@ ng serve // in the project folder
   - **new** creates a project in new directory
   - **init** creates a project in the current directory
 
-- You can tweak your server with port and host by your choice
 
-```
-ng serve --host 0.0.0.0 --port 4201
-```
 
 <!-- attr: { hasScriptWrapper:true, style:'font-size: 0.9em'  } -->
 # Generating Options
-
 
   - `--dry-run (alias d)`: Only output the files created and operations performed. It doesn't actually create the project.
   - `--verbose (alias v)`: Show more information
@@ -102,15 +113,40 @@ ng serve --host 0.0.0.0 --port 4201
   - `--skip-git`: Don't create a new git repo for this project
   - `--directory`: Specify the directory you want to create this project in
 
+<!-- attr: { hasScriptWrapper:true, style:'font-size: 0.9em'  } -->
+# Generating Options
+
+  - `--style scss`: Styles should use SASS
+  - `--prefix app`: Change the default prefix for selectors
+  - `--skip-test`: Don't generate spec files for testing
+  - `--style scss`: Styles should use SASS
+  - `--routing`: Adds routing module
+
+<!-- attr: { hasScriptWrapper:true, style:'font-size: 0.9em'  } -->
+# Lint your project
+
+- You can lint your app code by running **ng lint**. 
+- This will use the **lint** command in **package.json** file
+
+    - `ng lint` - lint the TypeScript code
+    - `ng lint --help` - show the help 
+    - `ng lint --fix` - fixes automatically errors
+
+- Use **tslint.json** to configure linter for your project
+
 <!-- attr: { hasScriptWrapper:true } -->
-# Components
+# Serve your project
+- You can tweak your server with port and host by your choice
 
-- **IMPORTANT**
-- Generating routes in the CLI has been disabled (**December 2016**)
-
+```
+ng serve
+ng serve --host 0.0.0.0
+ng serve --port 4201
+ng serve --host 0.0.0.0 --port 4201
+```
 
 <!-- attr: { hasScriptWrapper:true } -->
-# Components
+# Blueprints
 
 - You can use **ng generate** (**ng g**) to generate components(or any other building block of Angular)
 
@@ -126,18 +162,27 @@ ng serve --host 0.0.0.0 --port 4201
 - Your component will be generated in **src/app/feature/new-cmp**
 
 <!-- attr: { hasScriptWrapper:true } -->
-# Components
+# Blueprints
 
 - But if you were to run
   
-  ````
-  ng g component ../newer-cmp
-  ```
+```
+ng g component ../newer-cmp
+```
 
 - Your component will be generated in **src/app/newer-cmp**
 
+<!-- attr: { hasScriptWrapper:true } -->
+# Blueprint Options
+
+- `--flat true|false` - folder creation
+- `--inline-template true|false` - inline template in the component
+- `--inline-style true|false` - inline style in the component
+- `--spec true|false` - generate spec file for tests
+
+
 <!-- attr: { hasScriptWrapper:true, style:'font-size: 0.9em' } -->
-# Building Blocks
+# Blueprints
 
 
 | **Scaffold**  |	**Usage**               |
@@ -206,15 +251,6 @@ ng serve --host 0.0.0.0 --port 4201
   ng e2e
   ```
 
-<!-- attr: { hasScriptWrapper:true } -->
-# Linting
-
-- Linting your code
-
-  - You can lint your app code by running **ng lint**. 
-  - This will use the **lint** command in **package.json** file
-
-- Use **tslint.json** to configure linter for your project
 
 <!-- attr: { hasScriptWrapper:true } -->
 # Assets
@@ -289,6 +325,28 @@ npm install bootstrap@next
 ]
 ```
 
+<!-- section start -->
+<!-- attr: {id: '', class: 'slide-section', showInPresentation:true, hasScriptWrapper: true} -->
+<!-- # Architecture Overview -->
+
+
+<!-- attr: { hasScriptWrapper:true} -->
+# Architecture
+- This is the architecture of a<br/> typical Angular CLI project
+- There are a few files which<br /> need your attention
+  - **tsconfig.json**
+  - **tslint.json**
+  - **.angular-cli.json**
+
+
+<!-- <img class="slide-image" showInPresentation="true"  src="imgs/architecture.png" style="width:25%; left:70%; top:15%; border-radius: 10px;" /> -->
+
+<!-- attr: { hasScriptWrapper:true} -->
+# CLI Limitations (for now)
+
+- No support for add-ons 
+- No support for scaffold customizations
+- No support for custom Webpack config
 
 <!-- section start -->
 <!-- attr: {id: '', class: 'slide-section', showInPresentation:true, hasScriptWrapper: true} -->
@@ -333,8 +391,8 @@ npm install bootstrap@next
 <!-- attr: { showInPresentation: true, hasScriptWrapper: true} -->
 # Free Training @ Telerik Academy
 
-- Angular 2 Course
-  - [Angular 2](http://academy.telerik.com/student-courses/web-design-and-ui/spa-applications-with-angular2/about)
+- Angular Course
+  - [Angular](http://academy.telerik.com/student-courses/web-design-and-ui/spa-applications-with-angular2/about)
 - Telerik Software Academy
   - [telerikacademy.com](https://telerikacademy.com)
 - Telerik Academy @ Facebook

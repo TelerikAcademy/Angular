@@ -2,12 +2,12 @@
 
 Repository for the course [Single Page Applications with Angular](http://telerikacademy.com/Courses/Courses/Details/423) at [Telerik Academy](https://telerikacademy.com)
 
-Angular 2 е най-новата технология, чиято първа стабилна версия стана публична през септември 2016 г. Angular 2 е технология за създаване на front-end-а на уеб приложения по лесен и бърз начин. По подразбиране Angular 2 ни дава възможност да използваме на TypeScript, но също така може да бъдат използвани JavaScript или Dart. Курсът ще се води на TypeScript.
+Angular is one of the most famous SPA frameworks in the recent years. It is an open source project initially developed by Google and maintained by them. The former AngularJS is now called just Angular with its recent version 4 (July 2017). 
 
 ## Course program
 
-### [01. Angular-2-Overview](./Topics/01. Angular-2-Overview)
-##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="18"/>Slides](https://rawgit.com/TelerikAcademy/Single-Page-Applications-with-Angular/master/Topics/01.%20Angular-2-Overview/index.html) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos](/Topics/01.%20Angular-2-Overview/demos)
+### [01. Angular-Overview](./Topics/01. Angular-Overview)
+##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="18"/>Slides](https://rawgit.com/TelerikAcademy/Single-Page-Applications-with-Angular/master/Topics/01.%20Angular-Overview/index.html) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos](/Topics/01.%20Angular-2-Overview/demos)
 
 ### [02. Setup-and-Architecture](./Topics/02. Setup-and-Architecture)
 ##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="18"/>Slides](https://rawgit.com/TelerikAcademy/Single-Page-Applications-with-Angular/master/Topics/02.%20Setup-and-Architecture/index.html) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos](/Topics/02.%20Setup-and-Architecture/demos) 
