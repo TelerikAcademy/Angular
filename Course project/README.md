@@ -21,8 +21,6 @@ The **public part** of your projects should be **visible without authentication*
 
 Your Web application should include the following:
 
-<br>
-
 - Create several **public dynamic web pages** and use them.
 - Create several **private (authenticated) dynamic web pages** and use them.
 - Create several **different pipes** and use them.
@@ -31,20 +29,11 @@ Your Web application should include the following:
 - All of the data should be loaded from a `web server` using **services**.
   - You can either use `Firebase`, `Kinvey` or any other back-end service.
   - Or you can use your own server written on `Node.js`, `ASP.NET WebAPI` or any other technology.
-
-<br>
-
 - Unit test at **least 2 component**.
 - Integration test at **least 1 module**.
-
-<br>
-
 - Implement responsive UI using Bootstrap 3 or 4, or Materialize.
 - Your project should pass the default TS linting configuration without any errors.
 - You can use Angular CLI, Webpack, SystemJS or any other module loader/bundler.
-
-<br>
-
 - Your application should compile, work and produce an adequate result.
     - Applications that do not adhere to these requirements, will be severely penalized or not accepted at all.
 
