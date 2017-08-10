@@ -12,18 +12,12 @@
 
 <!-- section start -->
 # Table of contents
-- Benefits of usage
-- Environment setup
-- Data types
-- Modules
-- Classes
-  - Constructors
-  - Inheritance
-  - Super
-- Interfaces
-- Generics
+- What is TypeScript?
+- Environment Setup
+- Static Typing
+- Common Basic Types
+- Other Basic Types
 - Functions
-- Variables
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', id:'what-is-typescript' } -->
@@ -104,7 +98,8 @@ tsc main.ts
     "target": "es5", // Sets the output JS's version
     "module": "commonjs", // Sets the module loader
     "outDir": "dist", // Sets output JS files' location
-    "sourceMap": true // Allows backtracking / debugging
+    "sourceMap": true, // Allows debugging
+    "noEmitOnError": true // Do not compile if errors
   }
 }
 ```
@@ -380,7 +375,7 @@ x[4] = true; // Error, 'boolean' isn't 'string | number'
 <!-- section start -->
 <!-- attr: { class:'slide-section', id:'functions' } -->
 # Functions 
-## Standard, Arrow, Overloads
+## Only cool stuff
 
 # Functions
 
@@ -399,6 +394,136 @@ let arrow = (x, y) => {
 - As we have said so far, `JS` is valid `TS`.
 
 # Functions
+- TypeScript allows you to constrain your input parameters:
+```ts
+function add(x: number, y: number) {
+    return x + y;
+}
+```
+- It also allows you to specify a return type:
+```ts
+function add(x: number, y: number): number {
+    return x + y;
+}
+```
+
+# Return types
+- A function `return type` can be any **basic** type or **complex** type you have created.
+  - As with variables, return types can be `inferred` from the code base.
+  - There are two additional **basic** types, usable mainly as return types for functions:
+    - **Void** the function returns nothing
+    - **Never** the function never returns
+
+# Return types
+
+- **Void** is a `basic` type, the opposite of **any**
+  - Variables of type `void` are not useful because you can only assign `undefined` or `null` to them:
+```ts
+let unusable: void;
+unusable = undefined; // OK
+unusable = null; // OK
+unusable = 1; // Error
+```
+- Used to state that a function returns `nothing`:
+```ts
+function warnUser(): void {
+    alert("This is my warning message");
+}
+```
+
+# Return types
+- **Never** is a `basic` type that represents the type of values that never occur.
+  - Used for functions that always throw exceptions or never return:
+
+```ts
+  function error(message: string): never {
+      throw new Error(message);
+  }
+
+  function infiniteLoop(): never {
+    while (true) { }
+  }
+```
+
+# Function parameters
+
+- By default, `TypeScript` assumes that every function parameter is **required**.
+  - The compiler checks if all parameters are passed.
+  - That doesn't mean you can't pass `null` or `undefined` to them.
+    - Depends on the `strictNullChecks` flag.
+
+```ts
+function buildName(firstName: string, lastName: string) {
+    return firstName + " " + lastName;
+}
+let result1 = buildName("Bob");                  // error, too few parameters
+let result2 = buildName("Bob", "Adams", "Sr.");  // error, too many parameters
+let result3 = buildName("Bob", "Adams");         // ah, just right
+let result4 = buildName("Bob", null);            // still works, returns "Bob null"
+```
+
+# Function parameters
+
+- To fix the problem with the `result4` variable from the last slide, we need to use **default** parameters.
+
+```ts
+function buildName(firstName: string, lastName = "Smith") {
+    return firstName + " " + lastName;
+}
+
+let result1 = buildName("Bob");                  // works correctly now, returns "Bob Smith"
+let result2 = buildName("Bob", undefined);       // still works, also returns "Bob Smith"
+let result3 = buildName("Bob", "Adams", "Sr.");  // error, too many parameters
+let result4 = buildName("Bob", "Adams");         // ah, just right, returns "Bob Adams"
+```
+
+- Any parameter can be **default**.
+
+# Function parameters
+
+- We can create **optional** parameters using `?` at the end of the name.
+
+```ts
+function buildName(firstName: string, lastName?: string) {
+    if (lastName)
+        return firstName + " " + lastName;
+    else
+        return firstName;
+}
+
+let result1 = buildName("Bob");                  // works correctly now, returns "Bob"
+let result2 = buildName("Bob", "Adams", "Sr.");  // error, too many parameters
+let result3 = buildName("Bob", "Adams");         // ah, just right, returns "Bob Adams"
+```
+
+- Only the last parameter(s) can be optional
+
+# Function parameters
+
+- **Rest parameters** - Allows to take in a group of parameters using ellipsis `(...)`
+  - Similar to the `arugments` global variable in JS
+
+```ts
+function buildName(firstName: string, ...restOfName: string[]) {
+    return firstName + " " + restOfName.join(" ");
+}
+
+let employeeName = buildName("Joseph", "Samuel", "Lucas", "MacKinzie");
+```
+
+# Function parameters
+
+- The `ellipsis` is also used in the type of the function with rest parameters:
+
+
+```ts
+function buildName(firstName: string, ...restOfName: string[]) {
+    return firstName + " " + restOfName.join(" ");
+}
+
+let buildNameFun: (fname: string, ...rest: string[]) => string;
+buildNameFun = buildName;
+```
 
 
 <!-- section start -->
