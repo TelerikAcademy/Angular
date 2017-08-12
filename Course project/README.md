@@ -27,16 +27,13 @@ Your Web application should include the following:
 - Create several **different directives** and use them.
 - Create several **modules** and use them in the **routing**.
 - All of the data should be loaded from a `web server` using **services**.
-  - You can use `Firebase`, `Kinvey` or any other back-end service.
-  - Or you can use your own server written on `Node.js`, `ASP.NET WebAPI` or any other technology.
-
-- Unit test at **least 2 component**.
+  - You can either use `Firebase`, `Kinvey` or any other back-end service.
+  - Or you can use your own server written in `Node.js`, `ASP.NET WebAPI` or any other technology.
+- Unit test at **least 2 components**.
 - Integration test at **least 1 module**.
-
 - Implement responsive UI using Bootstrap 3 or 4, or Materialize.
 - Your project should pass the default TS linting configuration without any errors.
 - You can use Angular CLI, Webpack, SystemJS or any other module loader/bundler.
-
 - Your application should compile, work and produce an adequate result.
     - Applications that do not adhere to these requirements, will be severely penalized or not accepted at all.
 
