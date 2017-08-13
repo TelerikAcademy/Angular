@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "target": "es5", // Sets the output JS's version
+    "module": "commonjs", // Sets the module loader
+    "outDir": "dist", // Sets output JS files' location
+    "sourceMap": true, // Allows debugging
+    "noEmitOnError": true // Do not compile if errors
+  }
+}

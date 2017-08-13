@@ -1,0 +1,15 @@
+{
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "program": "${workspaceRoot}/dist/index.js",
+            "preLaunchTask": "compile",
+            "sourceMaps": true,
+            "outFiles": [
+                "${workspaceRoot}/dist/*.js"
+            ]
+        }
+    ]
+}
