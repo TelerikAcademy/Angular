@@ -85,13 +85,6 @@ Keep in mind that:
         - They `lack some TS features`, like debugging
 - Code configurations will be shown in **VS Code**
 
-<!-- attr: { hasScriptWrapper:true, style:"font-size: 43px" } -->
-# Must-learn stuff
-- **Git Branching**
-
-- **Live reload for development**
-    - Automatically reloads html, css, js and resource files on change
-
 <!-- section start -->
 <!-- attr: { hasScriptWrapper:true, class:"slide-section", showInPresentation:true } -->
 <!-- # Course Introduction
