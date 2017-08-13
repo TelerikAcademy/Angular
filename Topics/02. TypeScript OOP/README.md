@@ -326,14 +326,14 @@ function createSquare(config: SquareConfig): { color: string; area: number } {
 
 # Implementing an interface
 
-- Classes that `extend` must **implement** it
+- Classes must **implement** it
 
 ```ts
-abstract class Cat extends Animal {
+class Cat implements Animal {
   // Compilation error: Animal does not implement IAnimal
 }
 
-abstract class Cat extends Animal {
+class Cat implements Animal {
   public readonly name: string;
   public age: number;
 }
