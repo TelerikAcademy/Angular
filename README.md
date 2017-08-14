@@ -2,39 +2,51 @@
 
 Repository for the course [Single Page Applications with Angular](http://telerikacademy.com/Courses/Courses/Details/423) at [Telerik Academy](https://telerikacademy.com)
 
-Angular is one of the most famous SPA frameworks in the recent years. It is an open source project initially developed by Google and maintained by them. The former AngularJS is now called just Angular with its recent version 4 (July 2017). 
+Angular is one of the most famous SPA frameworks in the recent years. It is an open source project initially developed by Google and maintained by them. AngularJS is completely separate project. Angular 2 is now called just Angular with its recent version 4 (July 2017). 
 
 ## Course program
 
-### [01. Angular-Overview](./Topics/01. Angular-Overview)
-##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="18"/>Slides](https://rawgit.com/TelerikAcademy/Single-Page-Applications-with-Angular/master/Topics/01.%20Angular-Overview/index.html) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos](/Topics/01.%20Angular-2-Overview/demos)
+### 00. Course Intro
+##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="18"/>Slides](https://rawgit.com/TelerikAcademy/Single-Page-Applications-with-Angular/master/Topics/00.%Course-Intro/index.html) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos](/Topics/00.%Course-Intro/demos)
 
-### [02. Setup-and-Architecture](./Topics/02. Setup-and-Architecture)
+### 01. TypeScript Fundamentals
+##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="18"/>Slides](https://rawgit.com/TelerikAcademy/Single-Page-Applications-with-Angular/master/Topics/01.%20TypeScript-Fundamentals/index.html) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos](/Topics/01.%20TypeScript-Fundamentals/demos)
+
+### 01. TypeScript OOP
+##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="18"/>Slides](https://rawgit.com/TelerikAcademy/Single-Page-Applications-with-Angular/master/Topics/01.%20TypeScript-OOP/index.html) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos](/Topics/01.%20TypeScript-OOP/index.html/demos)
+
+### 02. Setup and Architecture
 ##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="18"/>Slides](https://rawgit.com/TelerikAcademy/Single-Page-Applications-with-Angular/master/Topics/02.%20Setup-and-Architecture/index.html) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos](/Topics/02.%20Setup-and-Architecture/demos) 
 
-### [03. Angular-CLI](./Topics/03. Angular-CLI)
-##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="18"/>Slides](https://rawgit.com/TelerikAcademy/Single-Page-Applications-with-Angular/master/Topics/03.%20Angular-CLI/index.html) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos](/Topics/03.%20Angular-CLI/demos)
+### 02. Angular-CLI
+##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="18"/>Slides](https://rawgit.com/TelerikAcademy/Single-Page-Applications-with-Angular/master/Topics/02.%20Angular-CLI/index.html) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos](/Topics/02.%20Angular-CLI/demos)
 
-### [04. Angular-Lifecycle](./Topics/04. Angular-Lifecycle)
+### 02. Tools
+##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="18"/>Slides](https://rawgit.com/TelerikAcademy/Single-Page-Applications-with-Angular/master/Topics/02.%20Tools/index.html) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos](/Topics/02.%20Tools/demos)
+
+### 03. Components
+##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="18"/>Slides](https://rawgit.com/TelerikAcademy/Single-Page-Applications-with-Angular/master/Topics/03.%20Components/index.html) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos](/Topics/03.%20Components/demos)
+
+### 04. Angular Lifecycle
 ##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="18"/>Slides](https://rawgit.com/TelerikAcademy/Single-Page-Applications-with-Angular/master/Topics/04.%20Angular-Lifecycle/index.html) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos](/Topics/04.%20Angular-Lifecycle/demos)
 
-### [05. Components](./Topics/05. Components)
-##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="18"/>Slides](https://rawgit.com/TelerikAcademy/Single-Page-Applications-with-Angular/master/Topics/05.%20Components/index.html) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos](/Topics/05.%20Components/demos)
+### 04. Data Binding
+##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="18"/>Slides](https://rawgit.com/TelerikAcademy/Single-Page-Applications-with-Angular/master/Topics/04.%20Data-Binding/index.html) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos](/Topics/04.%20Data-Binding/demos)
 
-### [06. Pipes-and-Directives](./Topics/06. Pipes-and-Directives)
-##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="18"/>Slides](https://rawgit.com/TelerikAcademy/Single-Page-Applications-with-Angular/master/Topics/06.%20Pipes-and-Directives/index.html) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos](/Topics/06.%20Pipes-and-Directives/demos)
+### 05. Routing
+##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="18"/>Slides](https://rawgit.com/TelerikAcademy/Single-Page-Applications-with-Angular/master/Topics/05.%20Routing/index.html) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos](/Topics/05.%20Routing/demos)
 
-### [07. Data-Binding](./Topics/07. Data-Binding)
-##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="18"/>Slides](https://rawgit.com/TelerikAcademy/Single-Page-Applications-with-Angular/master/Topics/07.%20Data-Binding/index.html) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos](/Topics/07.%20Data-Binding/demos)
+### 05. Modules
+##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="18"/>Slides](https://rawgit.com/TelerikAcademy/Single-Page-Applications-with-Angular/master/Topics/05.%20Modules/index.html) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos](/Topics/05.%20Modules/demos)
 
-### [08. Forms-and-Form-controls](./Topics/08. Forms-and-Form-controls)
-##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="18"/>Slides](https://rawgit.com/TelerikAcademy/Single-Page-Applications-with-Angular/master/Topics/08.%20Forms-and-Form-controls/index.html) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos](/Topics/08.%20Forms-and-Form-controls/demos)
+### 06. Http/Observables
+##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="18"/>Slides](https://rawgit.com/TelerikAcademy/Single-Page-Applications-with-Angular/master/Topics/06.%20Http-Observables/index.html) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos](/Topics/06.%20Http-Observables/demos)
 
-### [09. Services-and-DI](./Topics/09. Services-and-DI)
-##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="18"/>Slides](https://rawgit.com/TelerikAcademy/Single-Page-Applications-with-Angular/master/Topics/09.%20Services-and-DI/index.html) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos](/Topics/09.%20Services-and-DI/demos)
+### 06. Services and DI
+##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="18"/>Slides](https://rawgit.com/TelerikAcademy/Single-Page-Applications-with-Angular/master/Topics/06.%20Services-and-DI/index.html) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos](/Topics/06.%20Services-and-DI/demos)
 
-### [10. Http-Observables](./Topics/10. Http-Observables)
-##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="18"/>Slides](https://rawgit.com/TelerikAcademy/Single-Page-Applications-with-Angular/master/Topics/10.%20Http-Observables/index.html) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos](/Topics/10.%20Http-Observables/demos)
+### 07. Forms and Form controls
+##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="18"/>Slides](https://rawgit.com/TelerikAcademy/Single-Page-Applications-with-Angular/master/Topics/07.%20Forms-and-Form-controls/index.html) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos](/Topics/07.%20Forms-and-Form-controls/demos)
 
-### [11. Angular-2-Router](./Topics/11. Angular-2-Router)
-##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="18"/>Slides](https://rawgit.com/TelerikAcademy/Single-Page-Applications-with-Angular/master/Topics/11.%20Angular-2-Router/index.html) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos](/Topics/11.%20Angular-2-Router/demos)
+### 07. Pipes and Directives
+##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="18"/>Slides](https://rawgit.com/TelerikAcademy/Single-Page-Applications-with-Angular/master/Topics/07.%20Pipes-and-Directives/index.html) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos](/Topics/07.%20Pipes-and-Directives/demos)
