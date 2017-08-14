@@ -525,8 +525,21 @@ let buildNameFun: (fname: string, ...rest: string[]) => string;
 buildNameFun = buildName;
 ```
 
-
 <!-- section start -->
-<!-- attr: { id:'questions', class:'slide-section' } -->
-# Questions?
-## No? Good.
+<!-- attr: {id: 'questions', class: 'slide-section', hasScriptWrapper:true} -->
+
+# Questions
+<!-- <img class="slide-image" showInPresentation="true"  src="imgs/questions.jpg" style="height:40%; left:30%; top:30 border-radius: 10px;" /> -->
+
+
+<!-- attr: { showInPresentation: true, hasScriptWrapper: true} -->
+# Free Training @ Telerik Academy
+
+- Angular Course
+  - [Angular](http://academy.telerik.com/student-courses/web-design-and-ui/spa-applications-with-angular2/about)
+- Telerik Software Academy
+  - [telerikacademy.com](https://telerikacademy.com)
+- Telerik Academy @ Facebook
+  - [facebook.com/TelerikAcademy](https://facebook.com/TelerikAcademy)
+- Telerik Academy Learning System
+  - [telerikacademy.com](https://telerikacademy.com)
