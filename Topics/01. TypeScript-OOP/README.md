@@ -11,12 +11,11 @@
 
 <!-- section start -->
 # Table of contents
-- What is TypeScript?
-- Environment Setup
-- Static Typing
-- Common Basic Types
-- Other Basic Types
-- Functions
+- Classes
+- Access Modifiers
+- Interfaces
+- Generics
+- Modules
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', id:'classes' } -->
