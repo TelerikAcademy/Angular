@@ -101,11 +101,21 @@ export class HeroComponent {
 <!-- attr: { hasScriptWrapper:true } -->
 # Shadow DOM
 
-- Shadow DOM addresses the DOM tree encapsulation problem
-  - Allows us to hide DOM logic behind other elements
-- It introduces scoped styles to the web platform
-- Shadow DOM is designed as a tool for building component-based apps
+- `Shadow DOM` is just normal DOM with two differences: 
+  1. how it's created/used and 
+  2. how it behaves in relation to the rest of the page
+- `Shadow DOM` is designed as a tool for building component-based apps
+    
   - Angular uses components
+    - It addresses the `DOM` tree encapsulation problem
+    - Allows us to **hide** `DOM` logic behind other elements
+
+<!-- attr: { hasScriptWrapper:true } -->
+# Shadow DOM
+  - `Isolated DOM` -  A component's DOM is self-contained 
+    - `document.querySelector()` won't return nodes in the component's shadow DOM
+  - `Scoped CSS` -  CSS defined inside shadow DOM is scoped to it
+
 
 
 <!-- attr: { hasScriptWrapper:true } -->
@@ -125,7 +135,14 @@ export class HeroComponent {
 - Whenever we create a component, Angular puts it’s template into a `shadowRoot`, which is the **Shadow DOM** of that particular component
 <div style="position: absolute; left:10%; width:100%"><iframe src="https://embed.plnkr.co/aY2Bt4AsUcbsfesvoORX/" frameborder="0" width=70%></iframe></div>
 
+<!-- attr: { hasScriptWrapper:true } -->
+# View Encapsulation
 
+- Angular comes with view encapsulation by default hich enables Shadow DOM
+- There are three view encapsulation types available
+  - `None` - no Shadow DOM and no encapsulation
+  - `Emulated` **(default)** - no Shadow DOM but there is encapsulation of the views
+  - `Native` - native Shadow DOM
 
 <!-- section start -->
 <!-- attr: {id: '', class: 'slide-section', showInPresentation:true} -->
@@ -213,17 +230,19 @@ export class HeroComponent {
 <!-- attr: { hasScriptWrapper:true } -->
 # Template Relative Path
 
-- Relative path FTW
+- SystemJS specific
+  - Relative path FTW
 
- ```
+```
   @Component({
     selector: 'ng-app',
     templateUrl: './app.component.html'
   })
-  ```
+```
+
   We get an Error
 
-<!-- <img class="slide-image" showInPresentation="true"  src="imgs/relative-path-error.png" style="width:100%; left:5%; top:60%; border-radius: 10px;" /> -->
+<!-- <img class="slide-image" showInPresentation="true"  src="imgs/relative-path-error.png" style="width:80%; left:5%; top:63%; border-radius: 10px;" /> -->
   
 
 <!-- attr: { hasScriptWrapper:true } -->
@@ -300,6 +319,8 @@ export class HeroComponent {
 
 <!-- <img class="slide-image" showInPresentation="true"  src="imgs/template-webpack.png" style="width:40%; left:5%; top:65%; border-radius: 10px;" /> -->
 
+<!-- attr: { class:'slide-section', hasScriptWrapper:true } -->
+# Content projection (Transclusion)
 
 <!-- attr: { hasScriptWrapper:true } -->
 # Transclusion
@@ -412,7 +433,8 @@ export class HeroComponent {
 
 <div style="position: absolute; left:10%; width:100%; height:100%"><iframe src="https://embed.plnkr.co/KzXHQFS4xBKA3Jak5cy6/" frameborder="0" width=70% height=50%></iframe></div>
 
-<!-- attr: { hasScriptWrapper:true } -->
+<!-- section start -->
+<!-- attr: {  hasScriptWrapper:true } -->
 # Questions
 
 <!-- <img class="slide-image" showInPresentation="true"  src="imgs/questions.jpg" style="height:40%; left:30%; top:30 border-radius: 10px;" /> -->
