@@ -1,4 +1,3 @@
-import { DomUtilService } from './../shared/dom-util.service';
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({

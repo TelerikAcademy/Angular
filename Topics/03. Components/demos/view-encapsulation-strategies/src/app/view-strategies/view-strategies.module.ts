@@ -11,6 +11,9 @@ import { NoneComponent } from './none.component';
     CommonModule,
     ViewStrategiesRoutingModule
   ],
-  declarations: [EmulatedComponent, NativeComponent, NoneComponent]
+  declarations: [
+    EmulatedComponent,
+     NativeComponent,
+      NoneComponent]
 })
 export class ViewStrategiesModule { }
