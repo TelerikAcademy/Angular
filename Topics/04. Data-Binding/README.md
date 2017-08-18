@@ -20,7 +20,7 @@
   - Interpolation
   - Property binding
   - Event binding
-  - Two way binding
+- Two way binding
 
 
 <!-- section start -->
@@ -62,7 +62,7 @@
 <!-- attr: { hasScriptWrapper:true } -->
 # Interpolation
 
-- The material between the braces is often the name of a component property
+- The value between the braces is often the name of a component property
 - Angular replaces that name with the string value of the corresponding component property
 
 ```
@@ -166,7 +166,7 @@ export class HomeComponent {
 
 - We can add and remove CSS class names from an element’s class attribute with a class binding
   - **[class.class-name]**
-- Prefer **[ngClass]**
+- Prefer `[ngClass]`
 
 ```
 <p [class]="myClass">Styled with [class] - All or nothing</p>
@@ -179,7 +179,7 @@ export class HomeComponent {
 - We can set inline styles with a style binding
   - **[style.style-property]**
   - valid syntax (**style.font-size** or **style.fontSize**)
-- Prefer [ngStyle]
+- Prefer `[ngStyle]`
 
 ```
 <p 
@@ -222,43 +222,6 @@ or
        (input)="title=$event.target.value" >
 ```
 
-
-<!-- attr: { hasScriptWrapper:true } -->
-# Custom Events
-
-- Directives typically raise custom events with an Angular EventEmitter
-- The component defines a property that returns an EventEmitter
-- When the user interacts with the component, the later invokes the method, telling the EventEmitter to emit an object 
-- When the event fires, Angular calls the parent component's corresponding method
-
-<!-- attr: { hasScriptWrapper:true } -->
-# Custom Events
-
-- Child component
-
-```
-// child.component.ts
-@Output() alertMsg: EventEmitter<string> =
-   new EventEmitter<string>();
-
-onAlert() { //doSomething }
-
-// child.component.html
-<button (click)="onAlert()">Message</button>
-```
-
-<!-- attr: { hasScriptWrapper:true } -->
-# Custom Events
-
-- Parent component
-
-```
-// parent.component.ts
-showAlert(event) { //doSomething with the event }
-
-// parent.component.html
-<child (alertMsg)="showAlert($event)"></child>
-```
 
 <!-- section start -->
 <!-- attr: {id: '', class: 'slide-section', showInPresentation:true} -->
