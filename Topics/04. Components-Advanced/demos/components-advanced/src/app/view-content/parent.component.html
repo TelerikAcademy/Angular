@@ -1,0 +1,12 @@
+<app-child-view [title]="'Child'">
+  <h2 #h>Child</h2>
+</app-child-view>
+
+<button (click)="getInstanceOfChild()">Get Instance from child</button>
+<br>
+<br>
+<app-child-view #child [title]="'Child local ref'">
+  <h2 #h2>Child local ref</h2>
+</app-child-view>
+
+<button (click)="getInstanceOfChildLocalRef()">Get Instance from child local ref</button>

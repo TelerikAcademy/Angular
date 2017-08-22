@@ -1,0 +1,22 @@
+<nav class="navbar navbar-default" id="colorful-nav">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="home"><a [routerLink]="[ '/io' ]" routerLinkActive="active"><span class="glyphicon glyphicon-check"></span><h5>IO</h5></a></li>
+        <li class="statistics"><a [routerLink]="[ '/view' ]" routerLinkActive="active"><span class="glyphicon glyphicon-eye-open"></span><h5>VIEW</h5></a></li>
+        <li class="profile"><a [routerLink]="[ '/other' ]" routerLinkActive="active"><span class="glyphicon glyphicon-screenshot"></span><h5>OTHER</h5></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="col-md-offset-3 col-md-6">
+  <router-outlet></router-outlet>
+</div>

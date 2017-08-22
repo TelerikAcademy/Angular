@@ -1,0 +1,112 @@
+#colorful-nav {
+    padding-bottom: 0px;
+    border: 1px transparent;
+}
+
+#colorful-nav .navbar {
+    margin-bottom: 0px;
+}
+
+#colorful-nav {
+    background-color: transparent;
+}
+
+#colorful-nav .navbar-nav {
+    border-radius: 10px;
+    float:none;
+    height: 160px;
+}
+
+#colorful-nav .navbar-collapse {
+    border-top: 0;
+}
+
+#colorful-nav ul>li {
+    float:left;
+    text-align: center;
+    width: 14.2%;
+    padding-bottom: 13px;
+    transition: 0.2s padding-top;
+}
+
+#colorful-nav ul>li:hover {
+    padding-top: 20px;
+}
+
+#colorful-nav .navbar-nav>a {
+    padding-top: 25px;
+    color: white;
+}
+
+#colorful-nav ul>a:hover,
+#colorful-nav ul>a:focus {
+    background-color: transparent;
+    text-decoration: none;
+}
+
+#colorful-nav .glyphicon {
+    font-size: 30px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    color: white;
+}
+
+#colorful-nav .icon-bar {
+    background-color: black;
+}
+
+#colorful-nav .navbar-toggle {
+    float: left;
+    border-color: black;
+    margin-left: 25px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+#colorful-nav .navbar-brand {
+    height: 100px;
+}
+
+#colorful-nav h5{
+    color:white;
+}
+
+#colorful-nav .home {
+    background-color: #f87912;
+}
+
+#colorful-nav .profile {
+    background-color: #FFCC00;
+}
+
+#colorful-nav .statistics {
+    background-color: #AADD00;
+}
+
+#colorful-nav .lists {
+    background-color: #00CCCC;
+}
+
+#colorful-nav .about {
+    background-color: #666699;
+}
+
+#colorful-nav .contact {
+    background-color: #FF3333;
+}
+
+#colorful-nav .search {
+    background-color: #2253e2;
+}
+
+@media screen and (max-width: 767px){
+
+    #colorful-nav ul>li {
+        text-align: center;
+        width: 100%;
+    }
+
+    #colorful-nav ul>li:hover{
+        padding-top: 0px;
+    }
+}
