@@ -22,11 +22,4 @@ export class OuterComponent implements OnInit, OnChanges, DoCheck {
   ngDoCheck(): void {
     // console.log('[Outer] Change detection');
   }
-
-  // @HostListener('click', ['$event'])
-  changeInput(e) {
-    // console.log(e);
-    // this.test.name = 'Test1';
-    this.em.emit('pesho');
-  }
 }

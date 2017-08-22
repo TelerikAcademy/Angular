@@ -21,9 +21,4 @@ export class InnerComponent implements OnInit, OnChanges, DoCheck {
   ngDoCheck(): void {
     console.log('[Inner] Change detection');
   }
-
-  @HostListener('click')
-  aa(){
-    console.log("AAAAAA");
-  }
 }
