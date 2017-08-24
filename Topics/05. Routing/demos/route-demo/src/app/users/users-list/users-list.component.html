@@ -1,0 +1,11 @@
+<app-header [title]="'UserListComponent title'" [backColor]="'red'"></app-header>
+
+<h3 *ngFor="let user of users">
+  <a [routerLink]="[ '/users', user?.id ]">{{user.name}}</a>
+</h3>
+
+<input type="text" #i>
+
+<button (click)="addUser(i.value)">Add User</button>
+
+<h2>[ACTIVE USER] {{activeUser?.name}}</h2>
