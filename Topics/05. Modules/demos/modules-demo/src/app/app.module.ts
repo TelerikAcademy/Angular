@@ -16,7 +16,7 @@ import { CoreModule } from './core/core.module';
     AppRoutingModule,
     SharedModule,
     // Comment below to activate shared module UserService and explore behavior
-    CoreModule.forRoot(),
+    CoreModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
