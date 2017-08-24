@@ -1,0 +1,9 @@
+<h1>My angular app</h1>
+<router-outlet></router-outlet>
+<div style="border: 1px solid black">
+  <h2> App Component</h2>
+  <p *ngFor="let user of users">{{user.name}}</p>
+  <app-title [title]="'AppComponentHeader'" [bckgColor]="'cyan'"></app-title>
+</div>
+
+<h2>Check AppModule and SharedModule for comments and explore behavior when adding new user</h2>

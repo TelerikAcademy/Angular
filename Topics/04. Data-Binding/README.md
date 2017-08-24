@@ -309,7 +309,7 @@ or
 # Free Training @ Telerik Academy
 
 - Angular Course
-  - [Angular](http://academy.telerik.com/student-courses/web-design-and-ui/spa-applications-with-angular2/about)
+  - [Angular](http://academy.telerik.com/student-courses/web-design-and-ui/spa-applications-with-angular/about)
 - Telerik Software Academy
   - [telerikacademy.com](https://telerikacademy.com)
 - Telerik Academy @ Facebook
