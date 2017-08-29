@@ -89,6 +89,8 @@ class UserListComponent {
   - To perform complex initializations shortly after construction
   - To set up the component after Angular sets the input properties
 
+<!-- attr: { hasScriptWrapper:true } -->
+# OnInit
 - Don't fetch data in a component constructor
   - An **ngOnInit** is a good place for a component to fetch its initial data
 
@@ -165,7 +167,7 @@ class UserListComponent {
 # Free Training @ Telerik Academy
 
 - Angular Course
-  - [Angular](http://academy.telerik.com/student-courses/web-design-and-ui/spa-applications-with-angular2/about)
+  - [Angular](http://academy.telerik.com/student-courses/web-design-and-ui/spa-applications-with-angular/about)
 - Telerik Software Academy
   - [telerikacademy.com](https://telerikacademy.com)
 - Telerik Academy @ Facebook

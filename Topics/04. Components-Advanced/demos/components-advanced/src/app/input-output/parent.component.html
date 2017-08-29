@@ -1,0 +1,16 @@
+<div>
+  <label for="pass-1" >Pass to child</label>
+  <input id="pass-1" #c [(ngModel)]="parentNumber">
+</div>
+
+<div>
+    <label for="pass-1">Pass to child (alias)</label>
+    <input id="pass-1" #c [(ngModel)]="aliasTitle">
+  </div>
+<app-child #child [number]="parentNumber" [childTitle]="aliasTitle" (changeColor)="parentChangeColor($event)"></app-child>
+<!-- Here we have te event emitted from child
+$event is the object emitted from child
+in our case it is a string -->
+
+
+<button (click)="child.callFromLocalVariable()">[Parent] Local variable</button>

@@ -5,7 +5,7 @@
 # Angular Modules
 ## @NgModule
 <div class="signature">
-    <p class="signature-course">Angular 2</p>
+    <p class="signature-course">Angular</p>
     <p class="signature-initiative">Telerik Software Academy</p>
     <a href="http://academy.telerik.com" class="signature-link">http://academy.telerik.com</a>
 </div>
@@ -25,7 +25,7 @@
 <!-- attr: { hasScriptWrapper:true } -->
 # What is @NgModule
 
-- Angular 2 is modular 
+- Angular is modular 
 - Angular modules consolidate components, directives and pipes into cohesive blocks of functionality
     - May add services too
 - Class decorated with `@NgModule` decorator
@@ -134,6 +134,9 @@ platformBrowserDynamic().bootstrapModule(AppModule);
 <!-- attr: { hasScriptWrapper:true } -->
 # Browser Module
 - The root application module **(AppModule)** of almost every browser application should import **BrowserModule** from `@angular/platform-browser`.
+
+<!-- attr: { hasScriptWrapper:true } -->
+# Browser Module
 - Importing **BrowserModule** made all of its public components, directives and pipes visible to the component templates in **AppModule**
 - More accurately, `NgIf` is declared in **CommonModule** from `@angular/CommonModule`
 
@@ -192,6 +195,10 @@ export class BrowserModule {
 - Modules that are lazily loaded will only be loaded when the user navigates to their routes
 
 <!-- attr: { hasScriptWrapper:true } -->
+# Lazy Loading Modules
+- When a **module is lazy loaded**, Angular is going to create a `child injector` (which is a child of the root injector from the root module) and will create an instance of our service there
+
+<!-- attr: { hasScriptWrapper:true } -->
 # Module loading
 
 - Some modules and its services should only be loaded once by the root **AppModule**
@@ -223,6 +230,11 @@ export class HomeModule {
 
 }
 ```
+<!-- attr: { hasScriptWrapper:true } -->
+# Modules Encapsulation
+
+- Modules `don't inherit` access to the `components, directives, or pipes` that are declared in other module
+- What AppModule imports is **irrelevant** to other modules and vice versa
 
 <!-- attr: { hasScriptWrapper:true } -->
 # Shared Modules
@@ -280,6 +292,17 @@ import { Component } from '@angular/core';
 - This is because `HomeModule` did not itself import `CommonModule` where the core `ngStyle` directive is defined
 - Each module needs to define separately what it can 'see' in its context, so the solution here is to import the `CommonModule`
 
+<!-- attr: { hasScriptWrapper:true } -->
+# Root vs Feature Modules
+- If the module is importing the `BrowserModule` then it's a **root module**, if instead is importing the `CommonModule` then it is a **feature module**.
+
+<!-- attr: { hasScriptWrapper:true } -->
+# Modules Providers Scope
+- Providers in modules are `application-scoped` because Angular registers a module's `providers` with the application's **root injector**
+
+- NgModule instances, unlike components, don't have their own injectors so they can't have their own provider scopes.
+
+- This is intentional. `NgModules` are designed primarily to extend an application
 
 
 <!-- section start -->
@@ -292,8 +315,8 @@ import { Component } from '@angular/core';
 <!-- attr: { showInPresentation: true, hasScriptWrapper: true} -->
 # Free Training @ Telerik Academy
 
-- Angular 2 Course
-  - [Angular 2](http://academy.telerik.com/student-courses/web-design-and-ui/spa-applications-with-angular2/about)
+- Angular Course
+  - [Angular](http://academy.telerik.com/student-courses/web-design-and-ui/spa-applications-with-angular/about)
 - Telerik Software Academy
   - [telerikacademy.com](https://telerikacademy.com)
 - Telerik Academy @ Facebook
