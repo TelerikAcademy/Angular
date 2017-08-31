@@ -36,7 +36,7 @@ Each team has exactly 40 minutes for their defense. They will be split as follow
 
 ## Day one - September 11
 
-| Time  | Marto                             | Steven                           |
+| Time  | Marto                             | Steve                            |
 | ------|:----------------------------------|:---------------------------------|
 | 10:00 |The Changeable Sharks              |The Cheap Bears |
 | 10:40 |The Jagged Zebras                  |The Unbiased Moles |
