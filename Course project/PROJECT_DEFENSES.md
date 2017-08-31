@@ -9,7 +9,7 @@
 
 - Team members must be on site at the appointed time slot with:
   - **Ready-to-run** project
-    - `$ npm start` must start the application
+    - `$ ng serve` must start the application
     - The version of the application **must be as it was on September 11, 10:00 AM**
       - All later changes to the code-base will be skipped
       - Penalties might occur
