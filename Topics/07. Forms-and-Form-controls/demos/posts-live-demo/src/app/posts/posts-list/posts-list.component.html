@@ -1,0 +1,9 @@
+<h4> Posts: </h4>
+<h4 *ngIf="!!error">{{error}}</h4>
+
+<p>{{test | peshofier}}</p>
+
+<div class="post-details" *ngFor="let post of posts">
+  <h5>{{post?.title}}</h5>
+  <p>{{post?.body}}</p>
+</div>

@@ -1,0 +1,17 @@
+<h4>Create post</h4>
+
+<form (ngSubmit)="create(createForm.value)" #createForm=ngForm novalidate>
+  <div>
+    <label for="title">Title:</label>
+    <input type="text" name="title" (ngModel)="title" #titleInput=ngModel required>
+    <span *ngIf="!titleInput.valid && titleInput.touched || mouseover">Required</span>
+  </div>
+  <div>
+    <label for="body">Body:</label>
+    <input type="text" name="body" (ngModel)="body" #bodyInput=ngModel required>
+    <span *ngIf="!bodyInput.valid && bodyInput.touched || mouseover">Required</span>
+  </div>
+  <span (mouseenter)="mouseover=true" (mouseleave)="mouseover=false">
+      <input type="submit" [disabled]="!createForm.valid">
+  </span>
+</form>
